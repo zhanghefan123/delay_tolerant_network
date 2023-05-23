@@ -1,0 +1,13 @@
+#ifndef __INET_DTN_NEIGHBOR_STATE_UP_H
+#define __INET_DTN_NEIGHBOR_STATE_UP_H
+#include "inet/projects/dtn_network/dtn_states/DtnNeighborState.h"
+namespace inet{
+    class DtnNeighborStateUp : public DtnNeighborState{
+        public:
+            void processEvent(DtnNeighbor *neighbor, DtnNeighbor::DtnNeighborEventType event) override;
+            DtnNeighbor::DtnNeighborStateType getState() const override { return DtnNeighbor::NEIGHBOR_UP_STATE;}
+    };
+}
+
+
+#endif /* __INET_DTN_NEIGHBOR_STATE_UP_H */

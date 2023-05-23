@@ -1,0 +1,1781 @@
+version 3
+run General-0-20230523-15:51:17-36237
+attr configname General
+attr datetime 20230523-15:51:17
+attr datetimef 20230523-155117
+attr experiment General
+attr inifile starter.ini
+attr iterationvars ""
+attr iterationvarsd ""
+attr iterationvarsf ""
+attr measurement ""
+attr network inet.projects.dtn_network.dtn
+attr processid 36237
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+config cmdenv-express-mode false
+config cmdenv-stop-batch-on-error false
+config image-path ../../../../images
+config record-eventlog false
+config **.scalar-recording false
+config **.vector-recording false
+config network inet.projects.dtn_network.dtn
+config dtn.host1.dtnTraffic.destAddress "\"host4\""
+config dtn.host1.dtnTraffic.stopTime 10s
+config **.configurator.config "xmldoc(\"ipv4Config.xml\")"
+config allow-object-stealing-on-deletion true
+
+par dtn.host1.ethg$o[0].channel typename "\"inet.projects.dtn_network.dtn.LINK_100\""
+par dtn.host1.ethg$o[0].channel disabled false
+attr mutable ""
+par dtn.host1.ethg$o[0].channel delay 5e-05s
+attr mutable ""
+attr unit s
+par dtn.host1.ethg$o[0].channel datarate 1e+08bps
+attr mutable ""
+attr unit bps
+par dtn.host1.ethg$o[0].channel ber 0
+attr mutable ""
+par dtn.host1.ethg$o[0].channel per 0
+attr mutable ""
+par dtn.host1.ethg$o[0].channel displayAsTooltip true
+par dtn.host1.ethg$o[0].channel thruputDisplayFormat "\"#N\""
+par dtn.host2.ethg$o[0].channel typename "\"inet.projects.dtn_network.dtn.LINK_100\""
+par dtn.host2.ethg$o[0].channel disabled false
+attr mutable ""
+par dtn.host2.ethg$o[0].channel delay 5e-05s
+attr mutable ""
+attr unit s
+par dtn.host2.ethg$o[0].channel datarate 1e+08bps
+attr mutable ""
+attr unit bps
+par dtn.host2.ethg$o[0].channel ber 0
+attr mutable ""
+par dtn.host2.ethg$o[0].channel per 0
+attr mutable ""
+par dtn.host2.ethg$o[0].channel displayAsTooltip true
+par dtn.host2.ethg$o[0].channel thruputDisplayFormat "\"#N\""
+par dtn.host2.ethg$o[1].channel typename "\"inet.projects.dtn_network.dtn.LINK_100\""
+par dtn.host2.ethg$o[1].channel disabled false
+attr mutable ""
+par dtn.host2.ethg$o[1].channel delay 5e-05s
+attr mutable ""
+attr unit s
+par dtn.host2.ethg$o[1].channel datarate 1e+08bps
+attr mutable ""
+attr unit bps
+par dtn.host2.ethg$o[1].channel ber 0
+attr mutable ""
+par dtn.host2.ethg$o[1].channel per 0
+attr mutable ""
+par dtn.host2.ethg$o[1].channel displayAsTooltip true
+par dtn.host2.ethg$o[1].channel thruputDisplayFormat "\"#N\""
+par dtn.host3.ethg$o[0].channel typename "\"inet.projects.dtn_network.dtn.LINK_100\""
+par dtn.host3.ethg$o[0].channel disabled false
+attr mutable ""
+par dtn.host3.ethg$o[0].channel delay 5e-05s
+attr mutable ""
+attr unit s
+par dtn.host3.ethg$o[0].channel datarate 1e+08bps
+attr mutable ""
+attr unit bps
+par dtn.host3.ethg$o[0].channel ber 0
+attr mutable ""
+par dtn.host3.ethg$o[0].channel per 0
+attr mutable ""
+par dtn.host3.ethg$o[0].channel displayAsTooltip true
+par dtn.host3.ethg$o[0].channel thruputDisplayFormat "\"#N\""
+par dtn.host3.ethg$o[1].channel typename "\"inet.projects.dtn_network.dtn.LINK_100\""
+par dtn.host3.ethg$o[1].channel disabled false
+attr mutable ""
+par dtn.host3.ethg$o[1].channel delay 5e-05s
+attr mutable ""
+attr unit s
+par dtn.host3.ethg$o[1].channel datarate 1e+08bps
+attr mutable ""
+attr unit bps
+par dtn.host3.ethg$o[1].channel ber 0
+attr mutable ""
+par dtn.host3.ethg$o[1].channel per 0
+attr mutable ""
+par dtn.host3.ethg$o[1].channel displayAsTooltip true
+par dtn.host3.ethg$o[1].channel thruputDisplayFormat "\"#N\""
+par dtn.host4.ethg$o[0].channel typename "\"inet.projects.dtn_network.dtn.LINK_100\""
+par dtn.host4.ethg$o[0].channel disabled false
+attr mutable ""
+par dtn.host4.ethg$o[0].channel delay 5e-05s
+attr mutable ""
+attr unit s
+par dtn.host4.ethg$o[0].channel datarate 1e+08bps
+attr mutable ""
+attr unit bps
+par dtn.host4.ethg$o[0].channel ber 0
+attr mutable ""
+par dtn.host4.ethg$o[0].channel per 0
+attr mutable ""
+par dtn.host4.ethg$o[0].channel displayAsTooltip true
+par dtn.host4.ethg$o[0].channel thruputDisplayFormat "\"#N\""
+par dtn.host1.ethg$o[1].channel typename "\"inet.projects.dtn_network.dtn.LINK_100\""
+par dtn.host1.ethg$o[1].channel disabled false
+attr mutable ""
+par dtn.host1.ethg$o[1].channel delay 5e-05s
+attr mutable ""
+attr unit s
+par dtn.host1.ethg$o[1].channel datarate 1e+08bps
+attr mutable ""
+attr unit bps
+par dtn.host1.ethg$o[1].channel ber 0
+attr mutable ""
+par dtn.host1.ethg$o[1].channel per 0
+attr mutable ""
+par dtn.host1.ethg$o[1].channel displayAsTooltip true
+par dtn.host1.ethg$o[1].channel thruputDisplayFormat "\"#N\""
+par dtn.host5.ethg$o[0].channel typename "\"inet.projects.dtn_network.dtn.LINK_100\""
+par dtn.host5.ethg$o[0].channel disabled false
+attr mutable ""
+par dtn.host5.ethg$o[0].channel delay 5e-05s
+attr mutable ""
+attr unit s
+par dtn.host5.ethg$o[0].channel datarate 1e+08bps
+attr mutable ""
+attr unit bps
+par dtn.host5.ethg$o[0].channel ber 0
+attr mutable ""
+par dtn.host5.ethg$o[0].channel per 0
+attr mutable ""
+par dtn.host5.ethg$o[0].channel displayAsTooltip true
+par dtn.host5.ethg$o[0].channel thruputDisplayFormat "\"#N\""
+par dtn.host1.ethg$o[2].channel typename "\"inet.projects.dtn_network.dtn.LINK_100\""
+par dtn.host1.ethg$o[2].channel disabled false
+attr mutable ""
+par dtn.host1.ethg$o[2].channel delay 5e-05s
+attr mutable ""
+attr unit s
+par dtn.host1.ethg$o[2].channel datarate 1e+08bps
+attr mutable ""
+attr unit bps
+par dtn.host1.ethg$o[2].channel ber 0
+attr mutable ""
+par dtn.host1.ethg$o[2].channel per 0
+attr mutable ""
+par dtn.host1.ethg$o[2].channel displayAsTooltip true
+par dtn.host1.ethg$o[2].channel thruputDisplayFormat "\"#N\""
+par dtn.host6.ethg$o[0].channel typename "\"inet.projects.dtn_network.dtn.LINK_100\""
+par dtn.host6.ethg$o[0].channel disabled false
+attr mutable ""
+par dtn.host6.ethg$o[0].channel delay 5e-05s
+attr mutable ""
+attr unit s
+par dtn.host6.ethg$o[0].channel datarate 1e+08bps
+attr mutable ""
+attr unit bps
+par dtn.host6.ethg$o[0].channel ber 0
+attr mutable ""
+par dtn.host6.ethg$o[0].channel per 0
+attr mutable ""
+par dtn.host6.ethg$o[0].channel displayAsTooltip true
+par dtn.host6.ethg$o[0].channel thruputDisplayFormat "\"#N\""
+par dtn.configurator typename "\"inet.networklayer.configurator.ipv4.Ipv4NetworkConfigurator\""
+par dtn.configurator minLinkWeight 0.001
+par dtn.configurator configureIsolatedNetworksSeparatly false
+par dtn.configurator config "<config>...</config> at /home/zhf/Projects/DelayTolerantNetwork/inet/src/inet/projects/dtn_network//ipv4Config.xml:1"
+par dtn.configurator assignAddresses true
+par dtn.configurator assignUniqueAddresses true
+par dtn.configurator assignDisjunctSubnetAddresses true
+par dtn.configurator addStaticRoutes true
+par dtn.configurator addDefaultRoutes true
+par dtn.configurator addSubnetRoutes true
+par dtn.configurator addDirectRoutes true
+par dtn.configurator optimizeRoutes true
+par dtn.configurator dumpTopology false
+par dtn.configurator dumpLinks false
+par dtn.configurator dumpAddresses false
+par dtn.configurator dumpRoutes false
+par dtn.configurator dumpConfig "\"\""
+par dtn.host1.ethg$i[0].channel typename "\"ned.IdealChannel\""
+par dtn.host1.eth[0].phys$o.channel typename "\"ned.IdealChannel\""
+par dtn.host1.ethg$i[1].channel typename "\"ned.IdealChannel\""
+par dtn.host1.eth[1].phys$o.channel typename "\"ned.IdealChannel\""
+par dtn.host1.ethg$i[2].channel typename "\"ned.IdealChannel\""
+par dtn.host1.eth[2].phys$o.channel typename "\"ned.IdealChannel\""
+par dtn.host1.interfaceTable typename "\"inet.networklayer.common.InterfaceTable\""
+par dtn.host1.interfaceTable displayAddresses false
+par dtn.host1.li typename "\"inet.common.MessageDispatcher\""
+par dtn.host1.li displayStringTextFormat "\"processed %p pk (%l)\""
+par dtn.host1.lo[0].upperLayerIn.channel typename "\"ned.IdealChannel\""
+par dtn.host1.lo[0].lo.upperLayerOut.channel typename "\"ned.IdealChannel\""
+par dtn.host1.lo[0].lo typename "\"inet.linklayer.loopback.Loopback\""
+par dtn.host1.lo[0].lo interfaceTableModule "\"dtn.host1.interfaceTable\""
+par dtn.host1.lo[0].lo mtu 4470B
+attr unit B
+par dtn.host1.lo[0] typename "\"inet.linklayer.loopback.LoopbackInterface\""
+par dtn.host1.lo[0] displayStringTextFormat "\"%a (%i)\\n%m\""
+par dtn.host1.lo[0] recordPcap false
+par dtn.host1.lo[0] numPcapRecorders 0
+par dtn.host1.lo[0] interfaceTableModule "\"dtn.host1.interfaceTable\""
+par dtn.host1.eth[0].mac.phys$o.channel typename "\"ned.IdealChannel\""
+par dtn.host1.eth[0].phys$i.channel typename "\"ned.IdealChannel\""
+par dtn.host1.eth[0].encap.upperLayerOut.channel typename "\"ned.IdealChannel\""
+par dtn.host1.eth[0].upperLayerIn.channel typename "\"ned.IdealChannel\""
+par dtn.host1.eth[0].encap typename "\"inet.linklayer.ethernet.basic.EthernetEncapsulation\""
+par dtn.host1.eth[0].encap interfaceTableModule "\"dtn.host1.interfaceTable\""
+par dtn.host1.eth[0].encap useSNAP false
+par dtn.host1.eth[0].encap fcsMode "\"declared\""
+attr enum declared,computed
+par dtn.host1.eth[0].encap registerProtocol false
+par dtn.host1.eth[0].encap stopOperationExtraTime -1s
+attr unit s
+par dtn.host1.eth[0].encap stopOperationTimeout 2s
+attr unit s
+par dtn.host1.eth[0].mac.queue typename "\"inet.linklayer.ethernet.common.EthernetQueue\""
+par dtn.host1.eth[0].mac.queue displayStringTextFormat "\"contains %p pk (%l) pushed %u\\npulled %o removed %r dropped %d\""
+par dtn.host1.eth[0].mac.queue packetCapacity 10000
+par dtn.host1.eth[0].mac.queue dataCapacity -1b
+attr unit b
+par dtn.host1.eth[0].mac.queue dropperClass "\"inet::queueing::PacketAtCollectionEndDropper\""
+par dtn.host1.eth[0].mac.queue comparatorClass "\"inet::EthernetFrameTypeComparator\""
+par dtn.host1.eth[0].mac.queue bufferModule "\"\""
+par dtn.host1.eth[0].mac typename "\"inet.linklayer.ethernet.basic.EthernetMac\""
+par dtn.host1.eth[0].mac interfaceTableModule "\"dtn.host1.interfaceTable\""
+par dtn.host1.eth[0].mac displayStringTextFormat "\"rate: %b\\nsent: %s, rcvd: %r\\nqueue: %q, drop: %d\""
+par dtn.host1.eth[0].mac sendRawBytes false
+par dtn.host1.eth[0].mac promiscuous false
+par dtn.host1.eth[0].mac duplexMode true
+par dtn.host1.eth[0].mac mtu 1500B
+attr unit B
+par dtn.host1.eth[0].mac stopOperationExtraTime -1s
+attr unit s
+par dtn.host1.eth[0].mac stopOperationTimeout 2s
+attr unit s
+par dtn.host1.eth[0] typename "\"inet.linklayer.ethernet.EthernetInterface\""
+par dtn.host1.eth[0] displayStringTextFormat "\"%a (%i)\\n%m\""
+par dtn.host1.eth[0] recordPcap false
+par dtn.host1.eth[0] numPcapRecorders 0
+par dtn.host1.eth[0] interfaceTableModule "\"dtn.host1.interfaceTable\""
+par dtn.host1.eth[0] address "\"0A-AA-00-00-00-01\""
+attr mutable ""
+par dtn.host1.eth[0] duplexMode true
+par dtn.host1.eth[0] csmacdSupport false
+par dtn.host1.eth[0] bitrate 0bps
+attr unit bps
+par dtn.host1.eth[0] fcsMode "\"declared\""
+attr enum declared,computed
+par dtn.host1.eth[1].mac.phys$o.channel typename "\"ned.IdealChannel\""
+par dtn.host1.eth[1].phys$i.channel typename "\"ned.IdealChannel\""
+par dtn.host1.eth[1].encap.upperLayerOut.channel typename "\"ned.IdealChannel\""
+par dtn.host1.eth[1].upperLayerIn.channel typename "\"ned.IdealChannel\""
+par dtn.host1.eth[1].encap typename "\"inet.linklayer.ethernet.basic.EthernetEncapsulation\""
+par dtn.host1.eth[1].encap interfaceTableModule "\"dtn.host1.interfaceTable\""
+par dtn.host1.eth[1].encap useSNAP false
+par dtn.host1.eth[1].encap fcsMode "\"declared\""
+attr enum declared,computed
+par dtn.host1.eth[1].encap registerProtocol false
+par dtn.host1.eth[1].encap stopOperationExtraTime -1s
+attr unit s
+par dtn.host1.eth[1].encap stopOperationTimeout 2s
+attr unit s
+par dtn.host1.eth[1].mac.queue typename "\"inet.linklayer.ethernet.common.EthernetQueue\""
+par dtn.host1.eth[1].mac.queue displayStringTextFormat "\"contains %p pk (%l) pushed %u\\npulled %o removed %r dropped %d\""
+par dtn.host1.eth[1].mac.queue packetCapacity 10000
+par dtn.host1.eth[1].mac.queue dataCapacity -1b
+attr unit b
+par dtn.host1.eth[1].mac.queue dropperClass "\"inet::queueing::PacketAtCollectionEndDropper\""
+par dtn.host1.eth[1].mac.queue comparatorClass "\"inet::EthernetFrameTypeComparator\""
+par dtn.host1.eth[1].mac.queue bufferModule "\"\""
+par dtn.host1.eth[1].mac typename "\"inet.linklayer.ethernet.basic.EthernetMac\""
+par dtn.host1.eth[1].mac interfaceTableModule "\"dtn.host1.interfaceTable\""
+par dtn.host1.eth[1].mac displayStringTextFormat "\"rate: %b\\nsent: %s, rcvd: %r\\nqueue: %q, drop: %d\""
+par dtn.host1.eth[1].mac sendRawBytes false
+par dtn.host1.eth[1].mac promiscuous false
+par dtn.host1.eth[1].mac duplexMode true
+par dtn.host1.eth[1].mac mtu 1500B
+attr unit B
+par dtn.host1.eth[1].mac stopOperationExtraTime -1s
+attr unit s
+par dtn.host1.eth[1].mac stopOperationTimeout 2s
+attr unit s
+par dtn.host1.eth[1] typename "\"inet.linklayer.ethernet.EthernetInterface\""
+par dtn.host1.eth[1] displayStringTextFormat "\"%a (%i)\\n%m\""
+par dtn.host1.eth[1] recordPcap false
+par dtn.host1.eth[1] numPcapRecorders 0
+par dtn.host1.eth[1] interfaceTableModule "\"dtn.host1.interfaceTable\""
+par dtn.host1.eth[1] address "\"0A-AA-00-00-00-02\""
+attr mutable ""
+par dtn.host1.eth[1] duplexMode true
+par dtn.host1.eth[1] csmacdSupport false
+par dtn.host1.eth[1] bitrate 0bps
+attr unit bps
+par dtn.host1.eth[1] fcsMode "\"declared\""
+attr enum declared,computed
+par dtn.host1.eth[2].mac.phys$o.channel typename "\"ned.IdealChannel\""
+par dtn.host1.eth[2].phys$i.channel typename "\"ned.IdealChannel\""
+par dtn.host1.eth[2].encap.upperLayerOut.channel typename "\"ned.IdealChannel\""
+par dtn.host1.eth[2].upperLayerIn.channel typename "\"ned.IdealChannel\""
+par dtn.host1.eth[2].encap typename "\"inet.linklayer.ethernet.basic.EthernetEncapsulation\""
+par dtn.host1.eth[2].encap interfaceTableModule "\"dtn.host1.interfaceTable\""
+par dtn.host1.eth[2].encap useSNAP false
+par dtn.host1.eth[2].encap fcsMode "\"declared\""
+attr enum declared,computed
+par dtn.host1.eth[2].encap registerProtocol false
+par dtn.host1.eth[2].encap stopOperationExtraTime -1s
+attr unit s
+par dtn.host1.eth[2].encap stopOperationTimeout 2s
+attr unit s
+par dtn.host1.eth[2].mac.queue typename "\"inet.linklayer.ethernet.common.EthernetQueue\""
+par dtn.host1.eth[2].mac.queue displayStringTextFormat "\"contains %p pk (%l) pushed %u\\npulled %o removed %r dropped %d\""
+par dtn.host1.eth[2].mac.queue packetCapacity 10000
+par dtn.host1.eth[2].mac.queue dataCapacity -1b
+attr unit b
+par dtn.host1.eth[2].mac.queue dropperClass "\"inet::queueing::PacketAtCollectionEndDropper\""
+par dtn.host1.eth[2].mac.queue comparatorClass "\"inet::EthernetFrameTypeComparator\""
+par dtn.host1.eth[2].mac.queue bufferModule "\"\""
+par dtn.host1.eth[2].mac typename "\"inet.linklayer.ethernet.basic.EthernetMac\""
+par dtn.host1.eth[2].mac interfaceTableModule "\"dtn.host1.interfaceTable\""
+par dtn.host1.eth[2].mac displayStringTextFormat "\"rate: %b\\nsent: %s, rcvd: %r\\nqueue: %q, drop: %d\""
+par dtn.host1.eth[2].mac sendRawBytes false
+par dtn.host1.eth[2].mac promiscuous false
+par dtn.host1.eth[2].mac duplexMode true
+par dtn.host1.eth[2].mac mtu 1500B
+attr unit B
+par dtn.host1.eth[2].mac stopOperationExtraTime -1s
+attr unit s
+par dtn.host1.eth[2].mac stopOperationTimeout 2s
+attr unit s
+par dtn.host1.eth[2] typename "\"inet.linklayer.ethernet.EthernetInterface\""
+par dtn.host1.eth[2] displayStringTextFormat "\"%a (%i)\\n%m\""
+par dtn.host1.eth[2] recordPcap false
+par dtn.host1.eth[2] numPcapRecorders 0
+par dtn.host1.eth[2] interfaceTableModule "\"dtn.host1.interfaceTable\""
+par dtn.host1.eth[2] address "\"0A-AA-00-00-00-03\""
+attr mutable ""
+par dtn.host1.eth[2] duplexMode true
+par dtn.host1.eth[2] csmacdSupport false
+par dtn.host1.eth[2] bitrate 0bps
+attr unit bps
+par dtn.host1.eth[2] fcsMode "\"declared\""
+attr enum declared,computed
+par dtn.host1.ipv4.transportIn.channel typename "\"ned.IdealChannel\""
+par dtn.host1.ipv4.up.out[0].channel typename "\"ned.IdealChannel\""
+par dtn.host1.ipv4.lp.out[2].channel typename "\"ned.IdealChannel\""
+par dtn.host1.ipv4.ifIn.channel typename "\"ned.IdealChannel\""
+par dtn.host1.ipv4.configurator typename "\"inet.networklayer.configurator.ipv4.Ipv4NodeConfigurator\""
+par dtn.host1.ipv4.configurator interfaceTableModule "\"dtn.host1.interfaceTable\""
+par dtn.host1.ipv4.configurator routingTableModule "\"dtn.host1.ipv4.routingTable\""
+par dtn.host1.ipv4.configurator networkConfiguratorModule "\"configurator\""
+par dtn.host1.ipv4.configurator configureRoutingTable true
+par dtn.host1.ipv4.routingTable typename "\"inet.networklayer.ipv4.Ipv4RoutingTable\""
+par dtn.host1.ipv4.routingTable interfaceTableModule "\"dtn.host1.interfaceTable\""
+par dtn.host1.ipv4.routingTable routerId "\"auto\""
+par dtn.host1.ipv4.routingTable netmaskRoutes "\"*\""
+par dtn.host1.ipv4.routingTable forwarding false
+par dtn.host1.ipv4.routingTable multicastForwarding false
+par dtn.host1.ipv4.routingTable useAdminDist false
+par dtn.host1.ipv4.routingTable routingFile "\"\""
+par dtn.host1.ipv4.natTable typename "\"inet.networklayer.ipv4.Ipv4NatTable\""
+par dtn.host1.ipv4.natTable networkProtocolModule "\"^.ip\""
+par dtn.host1.ipv4.natTable config "<config/> at content:1"
+par dtn.host1.ipv4.up typename "\"inet.common.MessageDispatcher\""
+par dtn.host1.ipv4.up displayStringTextFormat "\"processed %p pk (%l)\""
+par dtn.host1.ipv4.igmp typename "\"inet.networklayer.ipv4.Igmpv2\""
+par dtn.host1.ipv4.igmp interfaceTableModule "\"dtn.host1.interfaceTable\""
+par dtn.host1.ipv4.igmp routingTableModule "\"dtn.host1.ipv4.routingTable\""
+par dtn.host1.ipv4.igmp crcMode "\"declared\""
+attr enum declared,computed
+par dtn.host1.ipv4.igmp enabled true
+par dtn.host1.ipv4.igmp robustnessVariable 2
+par dtn.host1.ipv4.igmp queryInterval 125s
+attr unit s
+par dtn.host1.ipv4.igmp queryResponseInterval 10s
+attr unit s
+par dtn.host1.ipv4.igmp groupMembershipInterval 260s
+attr unit s
+par dtn.host1.ipv4.igmp otherQuerierPresentInterval 255s
+attr unit s
+par dtn.host1.ipv4.igmp startupQueryInterval 31.25s
+attr unit s
+par dtn.host1.ipv4.igmp startupQueryCount 2
+par dtn.host1.ipv4.igmp lastMemberQueryInterval 1s
+attr unit s
+par dtn.host1.ipv4.igmp lastMemberQueryCount 2
+par dtn.host1.ipv4.igmp unsolicitedReportInterval 10s
+attr unit s
+par dtn.host1.ipv4.icmp typename "\"inet.networklayer.ipv4.Icmp\""
+par dtn.host1.ipv4.icmp interfaceTableModule "\"dtn.host1.interfaceTable\""
+par dtn.host1.ipv4.icmp routingTableModule "\"dtn.host1.ipv4.routingTable\""
+par dtn.host1.ipv4.icmp crcMode "\"declared\""
+attr enum declared,computed
+attr mutable ""
+par dtn.host1.ipv4.icmp quoteLength 8B
+attr mutable ""
+attr unit B
+par dtn.host1.ipv4.mp typename "\"inet.common.MessageDispatcher\""
+par dtn.host1.ipv4.mp displayStringTextFormat "\"processed %p pk (%l)\""
+par dtn.host1.ipv4.ip typename "\"inet.networklayer.ipv4.Ipv4\""
+par dtn.host1.ipv4.ip interfaceTableModule "\"dtn.host1.interfaceTable\""
+par dtn.host1.ipv4.ip routingTableModule "\"dtn.host1.ipv4.routingTable\""
+par dtn.host1.ipv4.ip arpModule "\"dtn.host1.ipv4.arp\""
+par dtn.host1.ipv4.ip icmpModule "\"dtn.host1.ipv4.icmp\""
+par dtn.host1.ipv4.ip crcMode "\"declared\""
+attr enum declared,computed
+par dtn.host1.ipv4.ip timeToLive 32
+par dtn.host1.ipv4.ip multicastTimeToLive 32
+par dtn.host1.ipv4.ip fragmentTimeout 60s
+attr unit s
+par dtn.host1.ipv4.ip limitedBroadcast false
+par dtn.host1.ipv4.ip directBroadcastInterfaces "\"\""
+par dtn.host1.ipv4.arp typename "\"inet.networklayer.arp.ipv4.Arp\""
+par dtn.host1.ipv4.arp interfaceTableModule "\"dtn.host1.interfaceTable\""
+par dtn.host1.ipv4.arp routingTableModule "\"dtn.host1.ipv4.routingTable\""
+par dtn.host1.ipv4.arp retryTimeout 1s
+attr unit s
+par dtn.host1.ipv4.arp retryCount 3
+par dtn.host1.ipv4.arp cacheTimeout 120s
+attr unit s
+par dtn.host1.ipv4.arp proxyArpInterfaces "\"\""
+par dtn.host1.ipv4.lp typename "\"inet.common.MessageDispatcher\""
+par dtn.host1.ipv4.lp displayStringTextFormat "\"processed %p pk (%l)\""
+par dtn.host1.ipv4 typename "\"inet.networklayer.ipv4.Ipv4NetworkLayer\""
+par dtn.host1.ipv4 forwarding false
+par dtn.host1.ipv4 multicastForwarding false
+par dtn.host1.ipv4 interfaceTableModule "\"dtn.host1.interfaceTable\""
+par dtn.host1.ipv4 displayStringTextFormat "\"%i\""
+par dtn.host1.nl typename "\"inet.common.MessageDispatcher\""
+par dtn.host1.nl displayStringTextFormat "\"processed %p pk (%l)\""
+par dtn.host1.udp typename "\"inet.transportlayer.udp.Udp\""
+par dtn.host1.udp interfaceTableModule "\"dtn.host1.interfaceTable\""
+par dtn.host1.udp icmpModule "\"^.ipv4.icmp\""
+par dtn.host1.udp icmpv6Module "\"^.ipv6.icmpv6\""
+par dtn.host1.udp crcMode "\"declared\""
+attr enum disabled,declared,computed
+par dtn.host1.tcp typename "\"inet.transportlayer.tcp.Tcp\""
+par dtn.host1.tcp crcMode "\"declared\""
+attr enum declared,computed
+par dtn.host1.tcp advertisedWindow 7504
+par dtn.host1.tcp delayedAcksEnabled false
+par dtn.host1.tcp nagleEnabled true
+par dtn.host1.tcp limitedTransmitEnabled false
+par dtn.host1.tcp increasedIWEnabled false
+par dtn.host1.tcp sackSupport false
+par dtn.host1.tcp windowScalingSupport false
+par dtn.host1.tcp windowScalingFactor -1
+par dtn.host1.tcp timestampSupport false
+par dtn.host1.tcp mss 536
+par dtn.host1.tcp msl 120s
+attr unit s
+par dtn.host1.tcp tcpAlgorithmClass "\"TcpReno\""
+attr enum TcpVegas,TcpWestwood,TcpNewReno,TcpReno,TcpTahoe,TcpNoCongestionControl
+par dtn.host1.tcp useDataNotification false
+par dtn.host1.tcp dupthresh 3
+par dtn.host1.tcp initialSsthresh 4294967295
+par dtn.host1.tcp stopOperationExtraTime 0s
+attr unit s
+par dtn.host1.tcp stopOperationTimeout 2s
+attr unit s
+par dtn.host1.tcp ecnWillingness false
+par dtn.host1.tcp dctcpGamma 0.0625
+par dtn.host1.tn typename "\"inet.common.MessageDispatcher\""
+par dtn.host1.tn displayStringTextFormat "\"processed %p pk (%l)\""
+par dtn.host1.at typename "\"inet.common.MessageDispatcher\""
+par dtn.host1.at displayStringTextFormat "\"processed %p pk (%l)\""
+par dtn.host1.dtn typename "\"inet.projects.dtn_network.dtn_module.dtn\""
+par dtn.host1.dtn neighbor_detection_interval 5s
+attr unit s
+par dtn.host1.dtn neighbor_expiration_time 20s
+attr unit s
+par dtn.host1.dtn check_neighbor_expiration_interval 10s
+attr unit s
+par dtn.host1.dtn buffer_expiration_time 50s
+attr unit s
+par dtn.host1.dtn check_buffer_expiration_interval 5s
+attr unit s
+par dtn.host1.dtn neighbor_exchange_interval 5s
+attr unit s
+par dtn.host1.dtnTraffic typename "\"inet.projects.dtn_network.dtn_module.DtnTraffic\""
+par dtn.host1.dtnTraffic destAddress "\"host4\""
+par dtn.host1.dtnTraffic sendInterval 2s
+attr unit s
+par dtn.host1.dtnTraffic startTime 0s
+attr unit s
+par dtn.host1.dtnTraffic stopTime 10s
+attr unit s
+par dtn.host1 typename "\"inet.projects.dtn_network.dtn_node.DtnRouter\""
+par dtn.host1 hasStatus false
+par dtn.host1 osgModel "\"\""
+par dtn.host1 osgModelColor "\"\""
+par dtn.host1 canvasImage "\"\""
+par dtn.host1 canvasImageColor "\"\""
+par dtn.host1 recordPcap false
+par dtn.host1 numPcapRecorders 0
+par dtn.host1 numLoInterfaces 1
+par dtn.host1 numWlanInterfaces 0
+par dtn.host1 numEthInterfaces 0
+par dtn.host1 numPppInterfaces 0
+par dtn.host1 numTunInterfaces 0
+par dtn.host1 numVirtInterfaces 0
+par dtn.host1 hasIpv4 true
+par dtn.host1 hasIpv6 false
+par dtn.host1 hasGn false
+par dtn.host1 forwarding false
+par dtn.host1 multicastForwarding false
+par dtn.host1 hasUdp true
+par dtn.host1 hasTcp true
+par dtn.host1 hasSctp false
+par dtn.host1 numApps 0
+par dtn.host2.ethg$i[0].channel typename "\"ned.IdealChannel\""
+par dtn.host2.eth[0].phys$o.channel typename "\"ned.IdealChannel\""
+par dtn.host2.ethg$i[1].channel typename "\"ned.IdealChannel\""
+par dtn.host2.eth[1].phys$o.channel typename "\"ned.IdealChannel\""
+par dtn.host2.interfaceTable typename "\"inet.networklayer.common.InterfaceTable\""
+par dtn.host2.interfaceTable displayAddresses false
+par dtn.host2.li typename "\"inet.common.MessageDispatcher\""
+par dtn.host2.li displayStringTextFormat "\"processed %p pk (%l)\""
+par dtn.host2.lo[0].upperLayerIn.channel typename "\"ned.IdealChannel\""
+par dtn.host2.lo[0].lo.upperLayerOut.channel typename "\"ned.IdealChannel\""
+par dtn.host2.lo[0].lo typename "\"inet.linklayer.loopback.Loopback\""
+par dtn.host2.lo[0].lo interfaceTableModule "\"dtn.host2.interfaceTable\""
+par dtn.host2.lo[0].lo mtu 4470B
+attr unit B
+par dtn.host2.lo[0] typename "\"inet.linklayer.loopback.LoopbackInterface\""
+par dtn.host2.lo[0] displayStringTextFormat "\"%a (%i)\\n%m\""
+par dtn.host2.lo[0] recordPcap false
+par dtn.host2.lo[0] numPcapRecorders 0
+par dtn.host2.lo[0] interfaceTableModule "\"dtn.host2.interfaceTable\""
+par dtn.host2.eth[0].mac.phys$o.channel typename "\"ned.IdealChannel\""
+par dtn.host2.eth[0].phys$i.channel typename "\"ned.IdealChannel\""
+par dtn.host2.eth[0].encap.upperLayerOut.channel typename "\"ned.IdealChannel\""
+par dtn.host2.eth[0].upperLayerIn.channel typename "\"ned.IdealChannel\""
+par dtn.host2.eth[0].encap typename "\"inet.linklayer.ethernet.basic.EthernetEncapsulation\""
+par dtn.host2.eth[0].encap interfaceTableModule "\"dtn.host2.interfaceTable\""
+par dtn.host2.eth[0].encap useSNAP false
+par dtn.host2.eth[0].encap fcsMode "\"declared\""
+attr enum declared,computed
+par dtn.host2.eth[0].encap registerProtocol false
+par dtn.host2.eth[0].encap stopOperationExtraTime -1s
+attr unit s
+par dtn.host2.eth[0].encap stopOperationTimeout 2s
+attr unit s
+par dtn.host2.eth[0].mac.queue typename "\"inet.linklayer.ethernet.common.EthernetQueue\""
+par dtn.host2.eth[0].mac.queue displayStringTextFormat "\"contains %p pk (%l) pushed %u\\npulled %o removed %r dropped %d\""
+par dtn.host2.eth[0].mac.queue packetCapacity 10000
+par dtn.host2.eth[0].mac.queue dataCapacity -1b
+attr unit b
+par dtn.host2.eth[0].mac.queue dropperClass "\"inet::queueing::PacketAtCollectionEndDropper\""
+par dtn.host2.eth[0].mac.queue comparatorClass "\"inet::EthernetFrameTypeComparator\""
+par dtn.host2.eth[0].mac.queue bufferModule "\"\""
+par dtn.host2.eth[0].mac typename "\"inet.linklayer.ethernet.basic.EthernetMac\""
+par dtn.host2.eth[0].mac interfaceTableModule "\"dtn.host2.interfaceTable\""
+par dtn.host2.eth[0].mac displayStringTextFormat "\"rate: %b\\nsent: %s, rcvd: %r\\nqueue: %q, drop: %d\""
+par dtn.host2.eth[0].mac sendRawBytes false
+par dtn.host2.eth[0].mac promiscuous false
+par dtn.host2.eth[0].mac duplexMode true
+par dtn.host2.eth[0].mac mtu 1500B
+attr unit B
+par dtn.host2.eth[0].mac stopOperationExtraTime -1s
+attr unit s
+par dtn.host2.eth[0].mac stopOperationTimeout 2s
+attr unit s
+par dtn.host2.eth[0] typename "\"inet.linklayer.ethernet.EthernetInterface\""
+par dtn.host2.eth[0] displayStringTextFormat "\"%a (%i)\\n%m\""
+par dtn.host2.eth[0] recordPcap false
+par dtn.host2.eth[0] numPcapRecorders 0
+par dtn.host2.eth[0] interfaceTableModule "\"dtn.host2.interfaceTable\""
+par dtn.host2.eth[0] address "\"0A-AA-00-00-00-04\""
+attr mutable ""
+par dtn.host2.eth[0] duplexMode true
+par dtn.host2.eth[0] csmacdSupport false
+par dtn.host2.eth[0] bitrate 0bps
+attr unit bps
+par dtn.host2.eth[0] fcsMode "\"declared\""
+attr enum declared,computed
+par dtn.host2.eth[1].mac.phys$o.channel typename "\"ned.IdealChannel\""
+par dtn.host2.eth[1].phys$i.channel typename "\"ned.IdealChannel\""
+par dtn.host2.eth[1].encap.upperLayerOut.channel typename "\"ned.IdealChannel\""
+par dtn.host2.eth[1].upperLayerIn.channel typename "\"ned.IdealChannel\""
+par dtn.host2.eth[1].encap typename "\"inet.linklayer.ethernet.basic.EthernetEncapsulation\""
+par dtn.host2.eth[1].encap interfaceTableModule "\"dtn.host2.interfaceTable\""
+par dtn.host2.eth[1].encap useSNAP false
+par dtn.host2.eth[1].encap fcsMode "\"declared\""
+attr enum declared,computed
+par dtn.host2.eth[1].encap registerProtocol false
+par dtn.host2.eth[1].encap stopOperationExtraTime -1s
+attr unit s
+par dtn.host2.eth[1].encap stopOperationTimeout 2s
+attr unit s
+par dtn.host2.eth[1].mac.queue typename "\"inet.linklayer.ethernet.common.EthernetQueue\""
+par dtn.host2.eth[1].mac.queue displayStringTextFormat "\"contains %p pk (%l) pushed %u\\npulled %o removed %r dropped %d\""
+par dtn.host2.eth[1].mac.queue packetCapacity 10000
+par dtn.host2.eth[1].mac.queue dataCapacity -1b
+attr unit b
+par dtn.host2.eth[1].mac.queue dropperClass "\"inet::queueing::PacketAtCollectionEndDropper\""
+par dtn.host2.eth[1].mac.queue comparatorClass "\"inet::EthernetFrameTypeComparator\""
+par dtn.host2.eth[1].mac.queue bufferModule "\"\""
+par dtn.host2.eth[1].mac typename "\"inet.linklayer.ethernet.basic.EthernetMac\""
+par dtn.host2.eth[1].mac interfaceTableModule "\"dtn.host2.interfaceTable\""
+par dtn.host2.eth[1].mac displayStringTextFormat "\"rate: %b\\nsent: %s, rcvd: %r\\nqueue: %q, drop: %d\""
+par dtn.host2.eth[1].mac sendRawBytes false
+par dtn.host2.eth[1].mac promiscuous false
+par dtn.host2.eth[1].mac duplexMode true
+par dtn.host2.eth[1].mac mtu 1500B
+attr unit B
+par dtn.host2.eth[1].mac stopOperationExtraTime -1s
+attr unit s
+par dtn.host2.eth[1].mac stopOperationTimeout 2s
+attr unit s
+par dtn.host2.eth[1] typename "\"inet.linklayer.ethernet.EthernetInterface\""
+par dtn.host2.eth[1] displayStringTextFormat "\"%a (%i)\\n%m\""
+par dtn.host2.eth[1] recordPcap false
+par dtn.host2.eth[1] numPcapRecorders 0
+par dtn.host2.eth[1] interfaceTableModule "\"dtn.host2.interfaceTable\""
+par dtn.host2.eth[1] address "\"0A-AA-00-00-00-05\""
+attr mutable ""
+par dtn.host2.eth[1] duplexMode true
+par dtn.host2.eth[1] csmacdSupport false
+par dtn.host2.eth[1] bitrate 0bps
+attr unit bps
+par dtn.host2.eth[1] fcsMode "\"declared\""
+attr enum declared,computed
+par dtn.host2.ipv4.transportIn.channel typename "\"ned.IdealChannel\""
+par dtn.host2.ipv4.up.out[0].channel typename "\"ned.IdealChannel\""
+par dtn.host2.ipv4.lp.out[2].channel typename "\"ned.IdealChannel\""
+par dtn.host2.ipv4.ifIn.channel typename "\"ned.IdealChannel\""
+par dtn.host2.ipv4.configurator typename "\"inet.networklayer.configurator.ipv4.Ipv4NodeConfigurator\""
+par dtn.host2.ipv4.configurator interfaceTableModule "\"dtn.host2.interfaceTable\""
+par dtn.host2.ipv4.configurator routingTableModule "\"dtn.host2.ipv4.routingTable\""
+par dtn.host2.ipv4.configurator networkConfiguratorModule "\"configurator\""
+par dtn.host2.ipv4.configurator configureRoutingTable true
+par dtn.host2.ipv4.routingTable typename "\"inet.networklayer.ipv4.Ipv4RoutingTable\""
+par dtn.host2.ipv4.routingTable interfaceTableModule "\"dtn.host2.interfaceTable\""
+par dtn.host2.ipv4.routingTable routerId "\"auto\""
+par dtn.host2.ipv4.routingTable netmaskRoutes "\"*\""
+par dtn.host2.ipv4.routingTable forwarding false
+par dtn.host2.ipv4.routingTable multicastForwarding false
+par dtn.host2.ipv4.routingTable useAdminDist false
+par dtn.host2.ipv4.routingTable routingFile "\"\""
+par dtn.host2.ipv4.natTable typename "\"inet.networklayer.ipv4.Ipv4NatTable\""
+par dtn.host2.ipv4.natTable networkProtocolModule "\"^.ip\""
+par dtn.host2.ipv4.natTable config "<config/> at content:1"
+par dtn.host2.ipv4.up typename "\"inet.common.MessageDispatcher\""
+par dtn.host2.ipv4.up displayStringTextFormat "\"processed %p pk (%l)\""
+par dtn.host2.ipv4.igmp typename "\"inet.networklayer.ipv4.Igmpv2\""
+par dtn.host2.ipv4.igmp interfaceTableModule "\"dtn.host2.interfaceTable\""
+par dtn.host2.ipv4.igmp routingTableModule "\"dtn.host2.ipv4.routingTable\""
+par dtn.host2.ipv4.igmp crcMode "\"declared\""
+attr enum declared,computed
+par dtn.host2.ipv4.igmp enabled true
+par dtn.host2.ipv4.igmp robustnessVariable 2
+par dtn.host2.ipv4.igmp queryInterval 125s
+attr unit s
+par dtn.host2.ipv4.igmp queryResponseInterval 10s
+attr unit s
+par dtn.host2.ipv4.igmp groupMembershipInterval 260s
+attr unit s
+par dtn.host2.ipv4.igmp otherQuerierPresentInterval 255s
+attr unit s
+par dtn.host2.ipv4.igmp startupQueryInterval 31.25s
+attr unit s
+par dtn.host2.ipv4.igmp startupQueryCount 2
+par dtn.host2.ipv4.igmp lastMemberQueryInterval 1s
+attr unit s
+par dtn.host2.ipv4.igmp lastMemberQueryCount 2
+par dtn.host2.ipv4.igmp unsolicitedReportInterval 10s
+attr unit s
+par dtn.host2.ipv4.icmp typename "\"inet.networklayer.ipv4.Icmp\""
+par dtn.host2.ipv4.icmp interfaceTableModule "\"dtn.host2.interfaceTable\""
+par dtn.host2.ipv4.icmp routingTableModule "\"dtn.host2.ipv4.routingTable\""
+par dtn.host2.ipv4.icmp crcMode "\"declared\""
+attr enum declared,computed
+attr mutable ""
+par dtn.host2.ipv4.icmp quoteLength 8B
+attr mutable ""
+attr unit B
+par dtn.host2.ipv4.mp typename "\"inet.common.MessageDispatcher\""
+par dtn.host2.ipv4.mp displayStringTextFormat "\"processed %p pk (%l)\""
+par dtn.host2.ipv4.ip typename "\"inet.networklayer.ipv4.Ipv4\""
+par dtn.host2.ipv4.ip interfaceTableModule "\"dtn.host2.interfaceTable\""
+par dtn.host2.ipv4.ip routingTableModule "\"dtn.host2.ipv4.routingTable\""
+par dtn.host2.ipv4.ip arpModule "\"dtn.host2.ipv4.arp\""
+par dtn.host2.ipv4.ip icmpModule "\"dtn.host2.ipv4.icmp\""
+par dtn.host2.ipv4.ip crcMode "\"declared\""
+attr enum declared,computed
+par dtn.host2.ipv4.ip timeToLive 32
+par dtn.host2.ipv4.ip multicastTimeToLive 32
+par dtn.host2.ipv4.ip fragmentTimeout 60s
+attr unit s
+par dtn.host2.ipv4.ip limitedBroadcast false
+par dtn.host2.ipv4.ip directBroadcastInterfaces "\"\""
+par dtn.host2.ipv4.arp typename "\"inet.networklayer.arp.ipv4.Arp\""
+par dtn.host2.ipv4.arp interfaceTableModule "\"dtn.host2.interfaceTable\""
+par dtn.host2.ipv4.arp routingTableModule "\"dtn.host2.ipv4.routingTable\""
+par dtn.host2.ipv4.arp retryTimeout 1s
+attr unit s
+par dtn.host2.ipv4.arp retryCount 3
+par dtn.host2.ipv4.arp cacheTimeout 120s
+attr unit s
+par dtn.host2.ipv4.arp proxyArpInterfaces "\"\""
+par dtn.host2.ipv4.lp typename "\"inet.common.MessageDispatcher\""
+par dtn.host2.ipv4.lp displayStringTextFormat "\"processed %p pk (%l)\""
+par dtn.host2.ipv4 typename "\"inet.networklayer.ipv4.Ipv4NetworkLayer\""
+par dtn.host2.ipv4 forwarding false
+par dtn.host2.ipv4 multicastForwarding false
+par dtn.host2.ipv4 interfaceTableModule "\"dtn.host2.interfaceTable\""
+par dtn.host2.ipv4 displayStringTextFormat "\"%i\""
+par dtn.host2.nl typename "\"inet.common.MessageDispatcher\""
+par dtn.host2.nl displayStringTextFormat "\"processed %p pk (%l)\""
+par dtn.host2.udp typename "\"inet.transportlayer.udp.Udp\""
+par dtn.host2.udp interfaceTableModule "\"dtn.host2.interfaceTable\""
+par dtn.host2.udp icmpModule "\"^.ipv4.icmp\""
+par dtn.host2.udp icmpv6Module "\"^.ipv6.icmpv6\""
+par dtn.host2.udp crcMode "\"declared\""
+attr enum disabled,declared,computed
+par dtn.host2.tcp typename "\"inet.transportlayer.tcp.Tcp\""
+par dtn.host2.tcp crcMode "\"declared\""
+attr enum declared,computed
+par dtn.host2.tcp advertisedWindow 7504
+par dtn.host2.tcp delayedAcksEnabled false
+par dtn.host2.tcp nagleEnabled true
+par dtn.host2.tcp limitedTransmitEnabled false
+par dtn.host2.tcp increasedIWEnabled false
+par dtn.host2.tcp sackSupport false
+par dtn.host2.tcp windowScalingSupport false
+par dtn.host2.tcp windowScalingFactor -1
+par dtn.host2.tcp timestampSupport false
+par dtn.host2.tcp mss 536
+par dtn.host2.tcp msl 120s
+attr unit s
+par dtn.host2.tcp tcpAlgorithmClass "\"TcpReno\""
+attr enum TcpVegas,TcpWestwood,TcpNewReno,TcpReno,TcpTahoe,TcpNoCongestionControl
+par dtn.host2.tcp useDataNotification false
+par dtn.host2.tcp dupthresh 3
+par dtn.host2.tcp initialSsthresh 4294967295
+par dtn.host2.tcp stopOperationExtraTime 0s
+attr unit s
+par dtn.host2.tcp stopOperationTimeout 2s
+attr unit s
+par dtn.host2.tcp ecnWillingness false
+par dtn.host2.tcp dctcpGamma 0.0625
+par dtn.host2.tn typename "\"inet.common.MessageDispatcher\""
+par dtn.host2.tn displayStringTextFormat "\"processed %p pk (%l)\""
+par dtn.host2.at typename "\"inet.common.MessageDispatcher\""
+par dtn.host2.at displayStringTextFormat "\"processed %p pk (%l)\""
+par dtn.host2.dtn typename "\"inet.projects.dtn_network.dtn_module.dtn\""
+par dtn.host2.dtn neighbor_detection_interval 5s
+attr unit s
+par dtn.host2.dtn neighbor_expiration_time 20s
+attr unit s
+par dtn.host2.dtn check_neighbor_expiration_interval 10s
+attr unit s
+par dtn.host2.dtn buffer_expiration_time 50s
+attr unit s
+par dtn.host2.dtn check_buffer_expiration_interval 5s
+attr unit s
+par dtn.host2.dtn neighbor_exchange_interval 5s
+attr unit s
+par dtn.host2.dtnTraffic typename "\"inet.projects.dtn_network.dtn_module.DtnTraffic\""
+par dtn.host2.dtnTraffic destAddress "\"\""
+par dtn.host2.dtnTraffic sendInterval 2s
+attr unit s
+par dtn.host2.dtnTraffic startTime 0s
+attr unit s
+par dtn.host2.dtnTraffic stopTime 0s
+attr unit s
+par dtn.host2 typename "\"inet.projects.dtn_network.dtn_node.DtnRouter\""
+par dtn.host2 hasStatus false
+par dtn.host2 osgModel "\"\""
+par dtn.host2 osgModelColor "\"\""
+par dtn.host2 canvasImage "\"\""
+par dtn.host2 canvasImageColor "\"\""
+par dtn.host2 recordPcap false
+par dtn.host2 numPcapRecorders 0
+par dtn.host2 numLoInterfaces 1
+par dtn.host2 numWlanInterfaces 0
+par dtn.host2 numEthInterfaces 0
+par dtn.host2 numPppInterfaces 0
+par dtn.host2 numTunInterfaces 0
+par dtn.host2 numVirtInterfaces 0
+par dtn.host2 hasIpv4 true
+par dtn.host2 hasIpv6 false
+par dtn.host2 hasGn false
+par dtn.host2 forwarding false
+par dtn.host2 multicastForwarding false
+par dtn.host2 hasUdp true
+par dtn.host2 hasTcp true
+par dtn.host2 hasSctp false
+par dtn.host2 numApps 0
+par dtn.host3.ethg$i[0].channel typename "\"ned.IdealChannel\""
+par dtn.host3.eth[0].phys$o.channel typename "\"ned.IdealChannel\""
+par dtn.host3.ethg$i[1].channel typename "\"ned.IdealChannel\""
+par dtn.host3.eth[1].phys$o.channel typename "\"ned.IdealChannel\""
+par dtn.host3.interfaceTable typename "\"inet.networklayer.common.InterfaceTable\""
+par dtn.host3.interfaceTable displayAddresses false
+par dtn.host3.li typename "\"inet.common.MessageDispatcher\""
+par dtn.host3.li displayStringTextFormat "\"processed %p pk (%l)\""
+par dtn.host3.lo[0].upperLayerIn.channel typename "\"ned.IdealChannel\""
+par dtn.host3.lo[0].lo.upperLayerOut.channel typename "\"ned.IdealChannel\""
+par dtn.host3.lo[0].lo typename "\"inet.linklayer.loopback.Loopback\""
+par dtn.host3.lo[0].lo interfaceTableModule "\"dtn.host3.interfaceTable\""
+par dtn.host3.lo[0].lo mtu 4470B
+attr unit B
+par dtn.host3.lo[0] typename "\"inet.linklayer.loopback.LoopbackInterface\""
+par dtn.host3.lo[0] displayStringTextFormat "\"%a (%i)\\n%m\""
+par dtn.host3.lo[0] recordPcap false
+par dtn.host3.lo[0] numPcapRecorders 0
+par dtn.host3.lo[0] interfaceTableModule "\"dtn.host3.interfaceTable\""
+par dtn.host3.eth[0].mac.phys$o.channel typename "\"ned.IdealChannel\""
+par dtn.host3.eth[0].phys$i.channel typename "\"ned.IdealChannel\""
+par dtn.host3.eth[0].encap.upperLayerOut.channel typename "\"ned.IdealChannel\""
+par dtn.host3.eth[0].upperLayerIn.channel typename "\"ned.IdealChannel\""
+par dtn.host3.eth[0].encap typename "\"inet.linklayer.ethernet.basic.EthernetEncapsulation\""
+par dtn.host3.eth[0].encap interfaceTableModule "\"dtn.host3.interfaceTable\""
+par dtn.host3.eth[0].encap useSNAP false
+par dtn.host3.eth[0].encap fcsMode "\"declared\""
+attr enum declared,computed
+par dtn.host3.eth[0].encap registerProtocol false
+par dtn.host3.eth[0].encap stopOperationExtraTime -1s
+attr unit s
+par dtn.host3.eth[0].encap stopOperationTimeout 2s
+attr unit s
+par dtn.host3.eth[0].mac.queue typename "\"inet.linklayer.ethernet.common.EthernetQueue\""
+par dtn.host3.eth[0].mac.queue displayStringTextFormat "\"contains %p pk (%l) pushed %u\\npulled %o removed %r dropped %d\""
+par dtn.host3.eth[0].mac.queue packetCapacity 10000
+par dtn.host3.eth[0].mac.queue dataCapacity -1b
+attr unit b
+par dtn.host3.eth[0].mac.queue dropperClass "\"inet::queueing::PacketAtCollectionEndDropper\""
+par dtn.host3.eth[0].mac.queue comparatorClass "\"inet::EthernetFrameTypeComparator\""
+par dtn.host3.eth[0].mac.queue bufferModule "\"\""
+par dtn.host3.eth[0].mac typename "\"inet.linklayer.ethernet.basic.EthernetMac\""
+par dtn.host3.eth[0].mac interfaceTableModule "\"dtn.host3.interfaceTable\""
+par dtn.host3.eth[0].mac displayStringTextFormat "\"rate: %b\\nsent: %s, rcvd: %r\\nqueue: %q, drop: %d\""
+par dtn.host3.eth[0].mac sendRawBytes false
+par dtn.host3.eth[0].mac promiscuous false
+par dtn.host3.eth[0].mac duplexMode true
+par dtn.host3.eth[0].mac mtu 1500B
+attr unit B
+par dtn.host3.eth[0].mac stopOperationExtraTime -1s
+attr unit s
+par dtn.host3.eth[0].mac stopOperationTimeout 2s
+attr unit s
+par dtn.host3.eth[0] typename "\"inet.linklayer.ethernet.EthernetInterface\""
+par dtn.host3.eth[0] displayStringTextFormat "\"%a (%i)\\n%m\""
+par dtn.host3.eth[0] recordPcap false
+par dtn.host3.eth[0] numPcapRecorders 0
+par dtn.host3.eth[0] interfaceTableModule "\"dtn.host3.interfaceTable\""
+par dtn.host3.eth[0] address "\"0A-AA-00-00-00-06\""
+attr mutable ""
+par dtn.host3.eth[0] duplexMode true
+par dtn.host3.eth[0] csmacdSupport false
+par dtn.host3.eth[0] bitrate 0bps
+attr unit bps
+par dtn.host3.eth[0] fcsMode "\"declared\""
+attr enum declared,computed
+par dtn.host3.eth[1].mac.phys$o.channel typename "\"ned.IdealChannel\""
+par dtn.host3.eth[1].phys$i.channel typename "\"ned.IdealChannel\""
+par dtn.host3.eth[1].encap.upperLayerOut.channel typename "\"ned.IdealChannel\""
+par dtn.host3.eth[1].upperLayerIn.channel typename "\"ned.IdealChannel\""
+par dtn.host3.eth[1].encap typename "\"inet.linklayer.ethernet.basic.EthernetEncapsulation\""
+par dtn.host3.eth[1].encap interfaceTableModule "\"dtn.host3.interfaceTable\""
+par dtn.host3.eth[1].encap useSNAP false
+par dtn.host3.eth[1].encap fcsMode "\"declared\""
+attr enum declared,computed
+par dtn.host3.eth[1].encap registerProtocol false
+par dtn.host3.eth[1].encap stopOperationExtraTime -1s
+attr unit s
+par dtn.host3.eth[1].encap stopOperationTimeout 2s
+attr unit s
+par dtn.host3.eth[1].mac.queue typename "\"inet.linklayer.ethernet.common.EthernetQueue\""
+par dtn.host3.eth[1].mac.queue displayStringTextFormat "\"contains %p pk (%l) pushed %u\\npulled %o removed %r dropped %d\""
+par dtn.host3.eth[1].mac.queue packetCapacity 10000
+par dtn.host3.eth[1].mac.queue dataCapacity -1b
+attr unit b
+par dtn.host3.eth[1].mac.queue dropperClass "\"inet::queueing::PacketAtCollectionEndDropper\""
+par dtn.host3.eth[1].mac.queue comparatorClass "\"inet::EthernetFrameTypeComparator\""
+par dtn.host3.eth[1].mac.queue bufferModule "\"\""
+par dtn.host3.eth[1].mac typename "\"inet.linklayer.ethernet.basic.EthernetMac\""
+par dtn.host3.eth[1].mac interfaceTableModule "\"dtn.host3.interfaceTable\""
+par dtn.host3.eth[1].mac displayStringTextFormat "\"rate: %b\\nsent: %s, rcvd: %r\\nqueue: %q, drop: %d\""
+par dtn.host3.eth[1].mac sendRawBytes false
+par dtn.host3.eth[1].mac promiscuous false
+par dtn.host3.eth[1].mac duplexMode true
+par dtn.host3.eth[1].mac mtu 1500B
+attr unit B
+par dtn.host3.eth[1].mac stopOperationExtraTime -1s
+attr unit s
+par dtn.host3.eth[1].mac stopOperationTimeout 2s
+attr unit s
+par dtn.host3.eth[1] typename "\"inet.linklayer.ethernet.EthernetInterface\""
+par dtn.host3.eth[1] displayStringTextFormat "\"%a (%i)\\n%m\""
+par dtn.host3.eth[1] recordPcap false
+par dtn.host3.eth[1] numPcapRecorders 0
+par dtn.host3.eth[1] interfaceTableModule "\"dtn.host3.interfaceTable\""
+par dtn.host3.eth[1] address "\"0A-AA-00-00-00-07\""
+attr mutable ""
+par dtn.host3.eth[1] duplexMode true
+par dtn.host3.eth[1] csmacdSupport false
+par dtn.host3.eth[1] bitrate 0bps
+attr unit bps
+par dtn.host3.eth[1] fcsMode "\"declared\""
+attr enum declared,computed
+par dtn.host3.ipv4.transportIn.channel typename "\"ned.IdealChannel\""
+par dtn.host3.ipv4.up.out[0].channel typename "\"ned.IdealChannel\""
+par dtn.host3.ipv4.lp.out[2].channel typename "\"ned.IdealChannel\""
+par dtn.host3.ipv4.ifIn.channel typename "\"ned.IdealChannel\""
+par dtn.host3.ipv4.configurator typename "\"inet.networklayer.configurator.ipv4.Ipv4NodeConfigurator\""
+par dtn.host3.ipv4.configurator interfaceTableModule "\"dtn.host3.interfaceTable\""
+par dtn.host3.ipv4.configurator routingTableModule "\"dtn.host3.ipv4.routingTable\""
+par dtn.host3.ipv4.configurator networkConfiguratorModule "\"configurator\""
+par dtn.host3.ipv4.configurator configureRoutingTable true
+par dtn.host3.ipv4.routingTable typename "\"inet.networklayer.ipv4.Ipv4RoutingTable\""
+par dtn.host3.ipv4.routingTable interfaceTableModule "\"dtn.host3.interfaceTable\""
+par dtn.host3.ipv4.routingTable routerId "\"auto\""
+par dtn.host3.ipv4.routingTable netmaskRoutes "\"*\""
+par dtn.host3.ipv4.routingTable forwarding false
+par dtn.host3.ipv4.routingTable multicastForwarding false
+par dtn.host3.ipv4.routingTable useAdminDist false
+par dtn.host3.ipv4.routingTable routingFile "\"\""
+par dtn.host3.ipv4.natTable typename "\"inet.networklayer.ipv4.Ipv4NatTable\""
+par dtn.host3.ipv4.natTable networkProtocolModule "\"^.ip\""
+par dtn.host3.ipv4.natTable config "<config/> at content:1"
+par dtn.host3.ipv4.up typename "\"inet.common.MessageDispatcher\""
+par dtn.host3.ipv4.up displayStringTextFormat "\"processed %p pk (%l)\""
+par dtn.host3.ipv4.igmp typename "\"inet.networklayer.ipv4.Igmpv2\""
+par dtn.host3.ipv4.igmp interfaceTableModule "\"dtn.host3.interfaceTable\""
+par dtn.host3.ipv4.igmp routingTableModule "\"dtn.host3.ipv4.routingTable\""
+par dtn.host3.ipv4.igmp crcMode "\"declared\""
+attr enum declared,computed
+par dtn.host3.ipv4.igmp enabled true
+par dtn.host3.ipv4.igmp robustnessVariable 2
+par dtn.host3.ipv4.igmp queryInterval 125s
+attr unit s
+par dtn.host3.ipv4.igmp queryResponseInterval 10s
+attr unit s
+par dtn.host3.ipv4.igmp groupMembershipInterval 260s
+attr unit s
+par dtn.host3.ipv4.igmp otherQuerierPresentInterval 255s
+attr unit s
+par dtn.host3.ipv4.igmp startupQueryInterval 31.25s
+attr unit s
+par dtn.host3.ipv4.igmp startupQueryCount 2
+par dtn.host3.ipv4.igmp lastMemberQueryInterval 1s
+attr unit s
+par dtn.host3.ipv4.igmp lastMemberQueryCount 2
+par dtn.host3.ipv4.igmp unsolicitedReportInterval 10s
+attr unit s
+par dtn.host3.ipv4.icmp typename "\"inet.networklayer.ipv4.Icmp\""
+par dtn.host3.ipv4.icmp interfaceTableModule "\"dtn.host3.interfaceTable\""
+par dtn.host3.ipv4.icmp routingTableModule "\"dtn.host3.ipv4.routingTable\""
+par dtn.host3.ipv4.icmp crcMode "\"declared\""
+attr enum declared,computed
+attr mutable ""
+par dtn.host3.ipv4.icmp quoteLength 8B
+attr mutable ""
+attr unit B
+par dtn.host3.ipv4.mp typename "\"inet.common.MessageDispatcher\""
+par dtn.host3.ipv4.mp displayStringTextFormat "\"processed %p pk (%l)\""
+par dtn.host3.ipv4.ip typename "\"inet.networklayer.ipv4.Ipv4\""
+par dtn.host3.ipv4.ip interfaceTableModule "\"dtn.host3.interfaceTable\""
+par dtn.host3.ipv4.ip routingTableModule "\"dtn.host3.ipv4.routingTable\""
+par dtn.host3.ipv4.ip arpModule "\"dtn.host3.ipv4.arp\""
+par dtn.host3.ipv4.ip icmpModule "\"dtn.host3.ipv4.icmp\""
+par dtn.host3.ipv4.ip crcMode "\"declared\""
+attr enum declared,computed
+par dtn.host3.ipv4.ip timeToLive 32
+par dtn.host3.ipv4.ip multicastTimeToLive 32
+par dtn.host3.ipv4.ip fragmentTimeout 60s
+attr unit s
+par dtn.host3.ipv4.ip limitedBroadcast false
+par dtn.host3.ipv4.ip directBroadcastInterfaces "\"\""
+par dtn.host3.ipv4.arp typename "\"inet.networklayer.arp.ipv4.Arp\""
+par dtn.host3.ipv4.arp interfaceTableModule "\"dtn.host3.interfaceTable\""
+par dtn.host3.ipv4.arp routingTableModule "\"dtn.host3.ipv4.routingTable\""
+par dtn.host3.ipv4.arp retryTimeout 1s
+attr unit s
+par dtn.host3.ipv4.arp retryCount 3
+par dtn.host3.ipv4.arp cacheTimeout 120s
+attr unit s
+par dtn.host3.ipv4.arp proxyArpInterfaces "\"\""
+par dtn.host3.ipv4.lp typename "\"inet.common.MessageDispatcher\""
+par dtn.host3.ipv4.lp displayStringTextFormat "\"processed %p pk (%l)\""
+par dtn.host3.ipv4 typename "\"inet.networklayer.ipv4.Ipv4NetworkLayer\""
+par dtn.host3.ipv4 forwarding false
+par dtn.host3.ipv4 multicastForwarding false
+par dtn.host3.ipv4 interfaceTableModule "\"dtn.host3.interfaceTable\""
+par dtn.host3.ipv4 displayStringTextFormat "\"%i\""
+par dtn.host3.nl typename "\"inet.common.MessageDispatcher\""
+par dtn.host3.nl displayStringTextFormat "\"processed %p pk (%l)\""
+par dtn.host3.udp typename "\"inet.transportlayer.udp.Udp\""
+par dtn.host3.udp interfaceTableModule "\"dtn.host3.interfaceTable\""
+par dtn.host3.udp icmpModule "\"^.ipv4.icmp\""
+par dtn.host3.udp icmpv6Module "\"^.ipv6.icmpv6\""
+par dtn.host3.udp crcMode "\"declared\""
+attr enum disabled,declared,computed
+par dtn.host3.tcp typename "\"inet.transportlayer.tcp.Tcp\""
+par dtn.host3.tcp crcMode "\"declared\""
+attr enum declared,computed
+par dtn.host3.tcp advertisedWindow 7504
+par dtn.host3.tcp delayedAcksEnabled false
+par dtn.host3.tcp nagleEnabled true
+par dtn.host3.tcp limitedTransmitEnabled false
+par dtn.host3.tcp increasedIWEnabled false
+par dtn.host3.tcp sackSupport false
+par dtn.host3.tcp windowScalingSupport false
+par dtn.host3.tcp windowScalingFactor -1
+par dtn.host3.tcp timestampSupport false
+par dtn.host3.tcp mss 536
+par dtn.host3.tcp msl 120s
+attr unit s
+par dtn.host3.tcp tcpAlgorithmClass "\"TcpReno\""
+attr enum TcpVegas,TcpWestwood,TcpNewReno,TcpReno,TcpTahoe,TcpNoCongestionControl
+par dtn.host3.tcp useDataNotification false
+par dtn.host3.tcp dupthresh 3
+par dtn.host3.tcp initialSsthresh 4294967295
+par dtn.host3.tcp stopOperationExtraTime 0s
+attr unit s
+par dtn.host3.tcp stopOperationTimeout 2s
+attr unit s
+par dtn.host3.tcp ecnWillingness false
+par dtn.host3.tcp dctcpGamma 0.0625
+par dtn.host3.tn typename "\"inet.common.MessageDispatcher\""
+par dtn.host3.tn displayStringTextFormat "\"processed %p pk (%l)\""
+par dtn.host3.at typename "\"inet.common.MessageDispatcher\""
+par dtn.host3.at displayStringTextFormat "\"processed %p pk (%l)\""
+par dtn.host3.dtn typename "\"inet.projects.dtn_network.dtn_module.dtn\""
+par dtn.host3.dtn neighbor_detection_interval 5s
+attr unit s
+par dtn.host3.dtn neighbor_expiration_time 20s
+attr unit s
+par dtn.host3.dtn check_neighbor_expiration_interval 10s
+attr unit s
+par dtn.host3.dtn buffer_expiration_time 50s
+attr unit s
+par dtn.host3.dtn check_buffer_expiration_interval 5s
+attr unit s
+par dtn.host3.dtn neighbor_exchange_interval 5s
+attr unit s
+par dtn.host3.dtnTraffic typename "\"inet.projects.dtn_network.dtn_module.DtnTraffic\""
+par dtn.host3.dtnTraffic destAddress "\"\""
+par dtn.host3.dtnTraffic sendInterval 2s
+attr unit s
+par dtn.host3.dtnTraffic startTime 0s
+attr unit s
+par dtn.host3.dtnTraffic stopTime 0s
+attr unit s
+par dtn.host3 typename "\"inet.projects.dtn_network.dtn_node.DtnRouter\""
+par dtn.host3 hasStatus false
+par dtn.host3 osgModel "\"\""
+par dtn.host3 osgModelColor "\"\""
+par dtn.host3 canvasImage "\"\""
+par dtn.host3 canvasImageColor "\"\""
+par dtn.host3 recordPcap false
+par dtn.host3 numPcapRecorders 0
+par dtn.host3 numLoInterfaces 1
+par dtn.host3 numWlanInterfaces 0
+par dtn.host3 numEthInterfaces 0
+par dtn.host3 numPppInterfaces 0
+par dtn.host3 numTunInterfaces 0
+par dtn.host3 numVirtInterfaces 0
+par dtn.host3 hasIpv4 true
+par dtn.host3 hasIpv6 false
+par dtn.host3 hasGn false
+par dtn.host3 forwarding false
+par dtn.host3 multicastForwarding false
+par dtn.host3 hasUdp true
+par dtn.host3 hasTcp true
+par dtn.host3 hasSctp false
+par dtn.host3 numApps 0
+par dtn.host4.ethg$i[0].channel typename "\"ned.IdealChannel\""
+par dtn.host4.eth[0].phys$o.channel typename "\"ned.IdealChannel\""
+par dtn.host4.interfaceTable typename "\"inet.networklayer.common.InterfaceTable\""
+par dtn.host4.interfaceTable displayAddresses false
+par dtn.host4.li typename "\"inet.common.MessageDispatcher\""
+par dtn.host4.li displayStringTextFormat "\"processed %p pk (%l)\""
+par dtn.host4.lo[0].upperLayerIn.channel typename "\"ned.IdealChannel\""
+par dtn.host4.lo[0].lo.upperLayerOut.channel typename "\"ned.IdealChannel\""
+par dtn.host4.lo[0].lo typename "\"inet.linklayer.loopback.Loopback\""
+par dtn.host4.lo[0].lo interfaceTableModule "\"dtn.host4.interfaceTable\""
+par dtn.host4.lo[0].lo mtu 4470B
+attr unit B
+par dtn.host4.lo[0] typename "\"inet.linklayer.loopback.LoopbackInterface\""
+par dtn.host4.lo[0] displayStringTextFormat "\"%a (%i)\\n%m\""
+par dtn.host4.lo[0] recordPcap false
+par dtn.host4.lo[0] numPcapRecorders 0
+par dtn.host4.lo[0] interfaceTableModule "\"dtn.host4.interfaceTable\""
+par dtn.host4.eth[0].mac.phys$o.channel typename "\"ned.IdealChannel\""
+par dtn.host4.eth[0].phys$i.channel typename "\"ned.IdealChannel\""
+par dtn.host4.eth[0].encap.upperLayerOut.channel typename "\"ned.IdealChannel\""
+par dtn.host4.eth[0].upperLayerIn.channel typename "\"ned.IdealChannel\""
+par dtn.host4.eth[0].encap typename "\"inet.linklayer.ethernet.basic.EthernetEncapsulation\""
+par dtn.host4.eth[0].encap interfaceTableModule "\"dtn.host4.interfaceTable\""
+par dtn.host4.eth[0].encap useSNAP false
+par dtn.host4.eth[0].encap fcsMode "\"declared\""
+attr enum declared,computed
+par dtn.host4.eth[0].encap registerProtocol false
+par dtn.host4.eth[0].encap stopOperationExtraTime -1s
+attr unit s
+par dtn.host4.eth[0].encap stopOperationTimeout 2s
+attr unit s
+par dtn.host4.eth[0].mac.queue typename "\"inet.linklayer.ethernet.common.EthernetQueue\""
+par dtn.host4.eth[0].mac.queue displayStringTextFormat "\"contains %p pk (%l) pushed %u\\npulled %o removed %r dropped %d\""
+par dtn.host4.eth[0].mac.queue packetCapacity 10000
+par dtn.host4.eth[0].mac.queue dataCapacity -1b
+attr unit b
+par dtn.host4.eth[0].mac.queue dropperClass "\"inet::queueing::PacketAtCollectionEndDropper\""
+par dtn.host4.eth[0].mac.queue comparatorClass "\"inet::EthernetFrameTypeComparator\""
+par dtn.host4.eth[0].mac.queue bufferModule "\"\""
+par dtn.host4.eth[0].mac typename "\"inet.linklayer.ethernet.basic.EthernetMac\""
+par dtn.host4.eth[0].mac interfaceTableModule "\"dtn.host4.interfaceTable\""
+par dtn.host4.eth[0].mac displayStringTextFormat "\"rate: %b\\nsent: %s, rcvd: %r\\nqueue: %q, drop: %d\""
+par dtn.host4.eth[0].mac sendRawBytes false
+par dtn.host4.eth[0].mac promiscuous false
+par dtn.host4.eth[0].mac duplexMode true
+par dtn.host4.eth[0].mac mtu 1500B
+attr unit B
+par dtn.host4.eth[0].mac stopOperationExtraTime -1s
+attr unit s
+par dtn.host4.eth[0].mac stopOperationTimeout 2s
+attr unit s
+par dtn.host4.eth[0] typename "\"inet.linklayer.ethernet.EthernetInterface\""
+par dtn.host4.eth[0] displayStringTextFormat "\"%a (%i)\\n%m\""
+par dtn.host4.eth[0] recordPcap false
+par dtn.host4.eth[0] numPcapRecorders 0
+par dtn.host4.eth[0] interfaceTableModule "\"dtn.host4.interfaceTable\""
+par dtn.host4.eth[0] address "\"0A-AA-00-00-00-08\""
+attr mutable ""
+par dtn.host4.eth[0] duplexMode true
+par dtn.host4.eth[0] csmacdSupport false
+par dtn.host4.eth[0] bitrate 0bps
+attr unit bps
+par dtn.host4.eth[0] fcsMode "\"declared\""
+attr enum declared,computed
+par dtn.host4.ipv4.transportIn.channel typename "\"ned.IdealChannel\""
+par dtn.host4.ipv4.up.out[0].channel typename "\"ned.IdealChannel\""
+par dtn.host4.ipv4.lp.out[2].channel typename "\"ned.IdealChannel\""
+par dtn.host4.ipv4.ifIn.channel typename "\"ned.IdealChannel\""
+par dtn.host4.ipv4.configurator typename "\"inet.networklayer.configurator.ipv4.Ipv4NodeConfigurator\""
+par dtn.host4.ipv4.configurator interfaceTableModule "\"dtn.host4.interfaceTable\""
+par dtn.host4.ipv4.configurator routingTableModule "\"dtn.host4.ipv4.routingTable\""
+par dtn.host4.ipv4.configurator networkConfiguratorModule "\"configurator\""
+par dtn.host4.ipv4.configurator configureRoutingTable true
+par dtn.host4.ipv4.routingTable typename "\"inet.networklayer.ipv4.Ipv4RoutingTable\""
+par dtn.host4.ipv4.routingTable interfaceTableModule "\"dtn.host4.interfaceTable\""
+par dtn.host4.ipv4.routingTable routerId "\"auto\""
+par dtn.host4.ipv4.routingTable netmaskRoutes "\"*\""
+par dtn.host4.ipv4.routingTable forwarding false
+par dtn.host4.ipv4.routingTable multicastForwarding false
+par dtn.host4.ipv4.routingTable useAdminDist false
+par dtn.host4.ipv4.routingTable routingFile "\"\""
+par dtn.host4.ipv4.natTable typename "\"inet.networklayer.ipv4.Ipv4NatTable\""
+par dtn.host4.ipv4.natTable networkProtocolModule "\"^.ip\""
+par dtn.host4.ipv4.natTable config "<config/> at content:1"
+par dtn.host4.ipv4.up typename "\"inet.common.MessageDispatcher\""
+par dtn.host4.ipv4.up displayStringTextFormat "\"processed %p pk (%l)\""
+par dtn.host4.ipv4.igmp typename "\"inet.networklayer.ipv4.Igmpv2\""
+par dtn.host4.ipv4.igmp interfaceTableModule "\"dtn.host4.interfaceTable\""
+par dtn.host4.ipv4.igmp routingTableModule "\"dtn.host4.ipv4.routingTable\""
+par dtn.host4.ipv4.igmp crcMode "\"declared\""
+attr enum declared,computed
+par dtn.host4.ipv4.igmp enabled true
+par dtn.host4.ipv4.igmp robustnessVariable 2
+par dtn.host4.ipv4.igmp queryInterval 125s
+attr unit s
+par dtn.host4.ipv4.igmp queryResponseInterval 10s
+attr unit s
+par dtn.host4.ipv4.igmp groupMembershipInterval 260s
+attr unit s
+par dtn.host4.ipv4.igmp otherQuerierPresentInterval 255s
+attr unit s
+par dtn.host4.ipv4.igmp startupQueryInterval 31.25s
+attr unit s
+par dtn.host4.ipv4.igmp startupQueryCount 2
+par dtn.host4.ipv4.igmp lastMemberQueryInterval 1s
+attr unit s
+par dtn.host4.ipv4.igmp lastMemberQueryCount 2
+par dtn.host4.ipv4.igmp unsolicitedReportInterval 10s
+attr unit s
+par dtn.host4.ipv4.icmp typename "\"inet.networklayer.ipv4.Icmp\""
+par dtn.host4.ipv4.icmp interfaceTableModule "\"dtn.host4.interfaceTable\""
+par dtn.host4.ipv4.icmp routingTableModule "\"dtn.host4.ipv4.routingTable\""
+par dtn.host4.ipv4.icmp crcMode "\"declared\""
+attr enum declared,computed
+attr mutable ""
+par dtn.host4.ipv4.icmp quoteLength 8B
+attr mutable ""
+attr unit B
+par dtn.host4.ipv4.mp typename "\"inet.common.MessageDispatcher\""
+par dtn.host4.ipv4.mp displayStringTextFormat "\"processed %p pk (%l)\""
+par dtn.host4.ipv4.ip typename "\"inet.networklayer.ipv4.Ipv4\""
+par dtn.host4.ipv4.ip interfaceTableModule "\"dtn.host4.interfaceTable\""
+par dtn.host4.ipv4.ip routingTableModule "\"dtn.host4.ipv4.routingTable\""
+par dtn.host4.ipv4.ip arpModule "\"dtn.host4.ipv4.arp\""
+par dtn.host4.ipv4.ip icmpModule "\"dtn.host4.ipv4.icmp\""
+par dtn.host4.ipv4.ip crcMode "\"declared\""
+attr enum declared,computed
+par dtn.host4.ipv4.ip timeToLive 32
+par dtn.host4.ipv4.ip multicastTimeToLive 32
+par dtn.host4.ipv4.ip fragmentTimeout 60s
+attr unit s
+par dtn.host4.ipv4.ip limitedBroadcast false
+par dtn.host4.ipv4.ip directBroadcastInterfaces "\"\""
+par dtn.host4.ipv4.arp typename "\"inet.networklayer.arp.ipv4.Arp\""
+par dtn.host4.ipv4.arp interfaceTableModule "\"dtn.host4.interfaceTable\""
+par dtn.host4.ipv4.arp routingTableModule "\"dtn.host4.ipv4.routingTable\""
+par dtn.host4.ipv4.arp retryTimeout 1s
+attr unit s
+par dtn.host4.ipv4.arp retryCount 3
+par dtn.host4.ipv4.arp cacheTimeout 120s
+attr unit s
+par dtn.host4.ipv4.arp proxyArpInterfaces "\"\""
+par dtn.host4.ipv4.lp typename "\"inet.common.MessageDispatcher\""
+par dtn.host4.ipv4.lp displayStringTextFormat "\"processed %p pk (%l)\""
+par dtn.host4.ipv4 typename "\"inet.networklayer.ipv4.Ipv4NetworkLayer\""
+par dtn.host4.ipv4 forwarding false
+par dtn.host4.ipv4 multicastForwarding false
+par dtn.host4.ipv4 interfaceTableModule "\"dtn.host4.interfaceTable\""
+par dtn.host4.ipv4 displayStringTextFormat "\"%i\""
+par dtn.host4.nl typename "\"inet.common.MessageDispatcher\""
+par dtn.host4.nl displayStringTextFormat "\"processed %p pk (%l)\""
+par dtn.host4.udp typename "\"inet.transportlayer.udp.Udp\""
+par dtn.host4.udp interfaceTableModule "\"dtn.host4.interfaceTable\""
+par dtn.host4.udp icmpModule "\"^.ipv4.icmp\""
+par dtn.host4.udp icmpv6Module "\"^.ipv6.icmpv6\""
+par dtn.host4.udp crcMode "\"declared\""
+attr enum disabled,declared,computed
+par dtn.host4.tcp typename "\"inet.transportlayer.tcp.Tcp\""
+par dtn.host4.tcp crcMode "\"declared\""
+attr enum declared,computed
+par dtn.host4.tcp advertisedWindow 7504
+par dtn.host4.tcp delayedAcksEnabled false
+par dtn.host4.tcp nagleEnabled true
+par dtn.host4.tcp limitedTransmitEnabled false
+par dtn.host4.tcp increasedIWEnabled false
+par dtn.host4.tcp sackSupport false
+par dtn.host4.tcp windowScalingSupport false
+par dtn.host4.tcp windowScalingFactor -1
+par dtn.host4.tcp timestampSupport false
+par dtn.host4.tcp mss 536
+par dtn.host4.tcp msl 120s
+attr unit s
+par dtn.host4.tcp tcpAlgorithmClass "\"TcpReno\""
+attr enum TcpVegas,TcpWestwood,TcpNewReno,TcpReno,TcpTahoe,TcpNoCongestionControl
+par dtn.host4.tcp useDataNotification false
+par dtn.host4.tcp dupthresh 3
+par dtn.host4.tcp initialSsthresh 4294967295
+par dtn.host4.tcp stopOperationExtraTime 0s
+attr unit s
+par dtn.host4.tcp stopOperationTimeout 2s
+attr unit s
+par dtn.host4.tcp ecnWillingness false
+par dtn.host4.tcp dctcpGamma 0.0625
+par dtn.host4.tn typename "\"inet.common.MessageDispatcher\""
+par dtn.host4.tn displayStringTextFormat "\"processed %p pk (%l)\""
+par dtn.host4.at typename "\"inet.common.MessageDispatcher\""
+par dtn.host4.at displayStringTextFormat "\"processed %p pk (%l)\""
+par dtn.host4.dtn typename "\"inet.projects.dtn_network.dtn_module.dtn\""
+par dtn.host4.dtn neighbor_detection_interval 5s
+attr unit s
+par dtn.host4.dtn neighbor_expiration_time 20s
+attr unit s
+par dtn.host4.dtn check_neighbor_expiration_interval 10s
+attr unit s
+par dtn.host4.dtn buffer_expiration_time 50s
+attr unit s
+par dtn.host4.dtn check_buffer_expiration_interval 5s
+attr unit s
+par dtn.host4.dtn neighbor_exchange_interval 5s
+attr unit s
+par dtn.host4.dtnTraffic typename "\"inet.projects.dtn_network.dtn_module.DtnTraffic\""
+par dtn.host4.dtnTraffic destAddress "\"\""
+par dtn.host4.dtnTraffic sendInterval 2s
+attr unit s
+par dtn.host4.dtnTraffic startTime 0s
+attr unit s
+par dtn.host4.dtnTraffic stopTime 0s
+attr unit s
+par dtn.host4 typename "\"inet.projects.dtn_network.dtn_node.DtnRouter\""
+par dtn.host4 hasStatus false
+par dtn.host4 osgModel "\"\""
+par dtn.host4 osgModelColor "\"\""
+par dtn.host4 canvasImage "\"\""
+par dtn.host4 canvasImageColor "\"\""
+par dtn.host4 recordPcap false
+par dtn.host4 numPcapRecorders 0
+par dtn.host4 numLoInterfaces 1
+par dtn.host4 numWlanInterfaces 0
+par dtn.host4 numEthInterfaces 0
+par dtn.host4 numPppInterfaces 0
+par dtn.host4 numTunInterfaces 0
+par dtn.host4 numVirtInterfaces 0
+par dtn.host4 hasIpv4 true
+par dtn.host4 hasIpv6 false
+par dtn.host4 hasGn false
+par dtn.host4 forwarding false
+par dtn.host4 multicastForwarding false
+par dtn.host4 hasUdp true
+par dtn.host4 hasTcp true
+par dtn.host4 hasSctp false
+par dtn.host4 numApps 0
+par dtn.host5.ethg$i[0].channel typename "\"ned.IdealChannel\""
+par dtn.host5.eth[0].phys$o.channel typename "\"ned.IdealChannel\""
+par dtn.host5.interfaceTable typename "\"inet.networklayer.common.InterfaceTable\""
+par dtn.host5.interfaceTable displayAddresses false
+par dtn.host5.li typename "\"inet.common.MessageDispatcher\""
+par dtn.host5.li displayStringTextFormat "\"processed %p pk (%l)\""
+par dtn.host5.lo[0].upperLayerIn.channel typename "\"ned.IdealChannel\""
+par dtn.host5.lo[0].lo.upperLayerOut.channel typename "\"ned.IdealChannel\""
+par dtn.host5.lo[0].lo typename "\"inet.linklayer.loopback.Loopback\""
+par dtn.host5.lo[0].lo interfaceTableModule "\"dtn.host5.interfaceTable\""
+par dtn.host5.lo[0].lo mtu 4470B
+attr unit B
+par dtn.host5.lo[0] typename "\"inet.linklayer.loopback.LoopbackInterface\""
+par dtn.host5.lo[0] displayStringTextFormat "\"%a (%i)\\n%m\""
+par dtn.host5.lo[0] recordPcap false
+par dtn.host5.lo[0] numPcapRecorders 0
+par dtn.host5.lo[0] interfaceTableModule "\"dtn.host5.interfaceTable\""
+par dtn.host5.eth[0].mac.phys$o.channel typename "\"ned.IdealChannel\""
+par dtn.host5.eth[0].phys$i.channel typename "\"ned.IdealChannel\""
+par dtn.host5.eth[0].encap.upperLayerOut.channel typename "\"ned.IdealChannel\""
+par dtn.host5.eth[0].upperLayerIn.channel typename "\"ned.IdealChannel\""
+par dtn.host5.eth[0].encap typename "\"inet.linklayer.ethernet.basic.EthernetEncapsulation\""
+par dtn.host5.eth[0].encap interfaceTableModule "\"dtn.host5.interfaceTable\""
+par dtn.host5.eth[0].encap useSNAP false
+par dtn.host5.eth[0].encap fcsMode "\"declared\""
+attr enum declared,computed
+par dtn.host5.eth[0].encap registerProtocol false
+par dtn.host5.eth[0].encap stopOperationExtraTime -1s
+attr unit s
+par dtn.host5.eth[0].encap stopOperationTimeout 2s
+attr unit s
+par dtn.host5.eth[0].mac.queue typename "\"inet.linklayer.ethernet.common.EthernetQueue\""
+par dtn.host5.eth[0].mac.queue displayStringTextFormat "\"contains %p pk (%l) pushed %u\\npulled %o removed %r dropped %d\""
+par dtn.host5.eth[0].mac.queue packetCapacity 10000
+par dtn.host5.eth[0].mac.queue dataCapacity -1b
+attr unit b
+par dtn.host5.eth[0].mac.queue dropperClass "\"inet::queueing::PacketAtCollectionEndDropper\""
+par dtn.host5.eth[0].mac.queue comparatorClass "\"inet::EthernetFrameTypeComparator\""
+par dtn.host5.eth[0].mac.queue bufferModule "\"\""
+par dtn.host5.eth[0].mac typename "\"inet.linklayer.ethernet.basic.EthernetMac\""
+par dtn.host5.eth[0].mac interfaceTableModule "\"dtn.host5.interfaceTable\""
+par dtn.host5.eth[0].mac displayStringTextFormat "\"rate: %b\\nsent: %s, rcvd: %r\\nqueue: %q, drop: %d\""
+par dtn.host5.eth[0].mac sendRawBytes false
+par dtn.host5.eth[0].mac promiscuous false
+par dtn.host5.eth[0].mac duplexMode true
+par dtn.host5.eth[0].mac mtu 1500B
+attr unit B
+par dtn.host5.eth[0].mac stopOperationExtraTime -1s
+attr unit s
+par dtn.host5.eth[0].mac stopOperationTimeout 2s
+attr unit s
+par dtn.host5.eth[0] typename "\"inet.linklayer.ethernet.EthernetInterface\""
+par dtn.host5.eth[0] displayStringTextFormat "\"%a (%i)\\n%m\""
+par dtn.host5.eth[0] recordPcap false
+par dtn.host5.eth[0] numPcapRecorders 0
+par dtn.host5.eth[0] interfaceTableModule "\"dtn.host5.interfaceTable\""
+par dtn.host5.eth[0] address "\"0A-AA-00-00-00-09\""
+attr mutable ""
+par dtn.host5.eth[0] duplexMode true
+par dtn.host5.eth[0] csmacdSupport false
+par dtn.host5.eth[0] bitrate 0bps
+attr unit bps
+par dtn.host5.eth[0] fcsMode "\"declared\""
+attr enum declared,computed
+par dtn.host5.ipv4.transportIn.channel typename "\"ned.IdealChannel\""
+par dtn.host5.ipv4.up.out[0].channel typename "\"ned.IdealChannel\""
+par dtn.host5.ipv4.lp.out[2].channel typename "\"ned.IdealChannel\""
+par dtn.host5.ipv4.ifIn.channel typename "\"ned.IdealChannel\""
+par dtn.host5.ipv4.configurator typename "\"inet.networklayer.configurator.ipv4.Ipv4NodeConfigurator\""
+par dtn.host5.ipv4.configurator interfaceTableModule "\"dtn.host5.interfaceTable\""
+par dtn.host5.ipv4.configurator routingTableModule "\"dtn.host5.ipv4.routingTable\""
+par dtn.host5.ipv4.configurator networkConfiguratorModule "\"configurator\""
+par dtn.host5.ipv4.configurator configureRoutingTable true
+par dtn.host5.ipv4.routingTable typename "\"inet.networklayer.ipv4.Ipv4RoutingTable\""
+par dtn.host5.ipv4.routingTable interfaceTableModule "\"dtn.host5.interfaceTable\""
+par dtn.host5.ipv4.routingTable routerId "\"auto\""
+par dtn.host5.ipv4.routingTable netmaskRoutes "\"*\""
+par dtn.host5.ipv4.routingTable forwarding false
+par dtn.host5.ipv4.routingTable multicastForwarding false
+par dtn.host5.ipv4.routingTable useAdminDist false
+par dtn.host5.ipv4.routingTable routingFile "\"\""
+par dtn.host5.ipv4.natTable typename "\"inet.networklayer.ipv4.Ipv4NatTable\""
+par dtn.host5.ipv4.natTable networkProtocolModule "\"^.ip\""
+par dtn.host5.ipv4.natTable config "<config/> at content:1"
+par dtn.host5.ipv4.up typename "\"inet.common.MessageDispatcher\""
+par dtn.host5.ipv4.up displayStringTextFormat "\"processed %p pk (%l)\""
+par dtn.host5.ipv4.igmp typename "\"inet.networklayer.ipv4.Igmpv2\""
+par dtn.host5.ipv4.igmp interfaceTableModule "\"dtn.host5.interfaceTable\""
+par dtn.host5.ipv4.igmp routingTableModule "\"dtn.host5.ipv4.routingTable\""
+par dtn.host5.ipv4.igmp crcMode "\"declared\""
+attr enum declared,computed
+par dtn.host5.ipv4.igmp enabled true
+par dtn.host5.ipv4.igmp robustnessVariable 2
+par dtn.host5.ipv4.igmp queryInterval 125s
+attr unit s
+par dtn.host5.ipv4.igmp queryResponseInterval 10s
+attr unit s
+par dtn.host5.ipv4.igmp groupMembershipInterval 260s
+attr unit s
+par dtn.host5.ipv4.igmp otherQuerierPresentInterval 255s
+attr unit s
+par dtn.host5.ipv4.igmp startupQueryInterval 31.25s
+attr unit s
+par dtn.host5.ipv4.igmp startupQueryCount 2
+par dtn.host5.ipv4.igmp lastMemberQueryInterval 1s
+attr unit s
+par dtn.host5.ipv4.igmp lastMemberQueryCount 2
+par dtn.host5.ipv4.igmp unsolicitedReportInterval 10s
+attr unit s
+par dtn.host5.ipv4.icmp typename "\"inet.networklayer.ipv4.Icmp\""
+par dtn.host5.ipv4.icmp interfaceTableModule "\"dtn.host5.interfaceTable\""
+par dtn.host5.ipv4.icmp routingTableModule "\"dtn.host5.ipv4.routingTable\""
+par dtn.host5.ipv4.icmp crcMode "\"declared\""
+attr enum declared,computed
+attr mutable ""
+par dtn.host5.ipv4.icmp quoteLength 8B
+attr mutable ""
+attr unit B
+par dtn.host5.ipv4.mp typename "\"inet.common.MessageDispatcher\""
+par dtn.host5.ipv4.mp displayStringTextFormat "\"processed %p pk (%l)\""
+par dtn.host5.ipv4.ip typename "\"inet.networklayer.ipv4.Ipv4\""
+par dtn.host5.ipv4.ip interfaceTableModule "\"dtn.host5.interfaceTable\""
+par dtn.host5.ipv4.ip routingTableModule "\"dtn.host5.ipv4.routingTable\""
+par dtn.host5.ipv4.ip arpModule "\"dtn.host5.ipv4.arp\""
+par dtn.host5.ipv4.ip icmpModule "\"dtn.host5.ipv4.icmp\""
+par dtn.host5.ipv4.ip crcMode "\"declared\""
+attr enum declared,computed
+par dtn.host5.ipv4.ip timeToLive 32
+par dtn.host5.ipv4.ip multicastTimeToLive 32
+par dtn.host5.ipv4.ip fragmentTimeout 60s
+attr unit s
+par dtn.host5.ipv4.ip limitedBroadcast false
+par dtn.host5.ipv4.ip directBroadcastInterfaces "\"\""
+par dtn.host5.ipv4.arp typename "\"inet.networklayer.arp.ipv4.Arp\""
+par dtn.host5.ipv4.arp interfaceTableModule "\"dtn.host5.interfaceTable\""
+par dtn.host5.ipv4.arp routingTableModule "\"dtn.host5.ipv4.routingTable\""
+par dtn.host5.ipv4.arp retryTimeout 1s
+attr unit s
+par dtn.host5.ipv4.arp retryCount 3
+par dtn.host5.ipv4.arp cacheTimeout 120s
+attr unit s
+par dtn.host5.ipv4.arp proxyArpInterfaces "\"\""
+par dtn.host5.ipv4.lp typename "\"inet.common.MessageDispatcher\""
+par dtn.host5.ipv4.lp displayStringTextFormat "\"processed %p pk (%l)\""
+par dtn.host5.ipv4 typename "\"inet.networklayer.ipv4.Ipv4NetworkLayer\""
+par dtn.host5.ipv4 forwarding false
+par dtn.host5.ipv4 multicastForwarding false
+par dtn.host5.ipv4 interfaceTableModule "\"dtn.host5.interfaceTable\""
+par dtn.host5.ipv4 displayStringTextFormat "\"%i\""
+par dtn.host5.nl typename "\"inet.common.MessageDispatcher\""
+par dtn.host5.nl displayStringTextFormat "\"processed %p pk (%l)\""
+par dtn.host5.udp typename "\"inet.transportlayer.udp.Udp\""
+par dtn.host5.udp interfaceTableModule "\"dtn.host5.interfaceTable\""
+par dtn.host5.udp icmpModule "\"^.ipv4.icmp\""
+par dtn.host5.udp icmpv6Module "\"^.ipv6.icmpv6\""
+par dtn.host5.udp crcMode "\"declared\""
+attr enum disabled,declared,computed
+par dtn.host5.tcp typename "\"inet.transportlayer.tcp.Tcp\""
+par dtn.host5.tcp crcMode "\"declared\""
+attr enum declared,computed
+par dtn.host5.tcp advertisedWindow 7504
+par dtn.host5.tcp delayedAcksEnabled false
+par dtn.host5.tcp nagleEnabled true
+par dtn.host5.tcp limitedTransmitEnabled false
+par dtn.host5.tcp increasedIWEnabled false
+par dtn.host5.tcp sackSupport false
+par dtn.host5.tcp windowScalingSupport false
+par dtn.host5.tcp windowScalingFactor -1
+par dtn.host5.tcp timestampSupport false
+par dtn.host5.tcp mss 536
+par dtn.host5.tcp msl 120s
+attr unit s
+par dtn.host5.tcp tcpAlgorithmClass "\"TcpReno\""
+attr enum TcpVegas,TcpWestwood,TcpNewReno,TcpReno,TcpTahoe,TcpNoCongestionControl
+par dtn.host5.tcp useDataNotification false
+par dtn.host5.tcp dupthresh 3
+par dtn.host5.tcp initialSsthresh 4294967295
+par dtn.host5.tcp stopOperationExtraTime 0s
+attr unit s
+par dtn.host5.tcp stopOperationTimeout 2s
+attr unit s
+par dtn.host5.tcp ecnWillingness false
+par dtn.host5.tcp dctcpGamma 0.0625
+par dtn.host5.tn typename "\"inet.common.MessageDispatcher\""
+par dtn.host5.tn displayStringTextFormat "\"processed %p pk (%l)\""
+par dtn.host5.at typename "\"inet.common.MessageDispatcher\""
+par dtn.host5.at displayStringTextFormat "\"processed %p pk (%l)\""
+par dtn.host5.dtn typename "\"inet.projects.dtn_network.dtn_module.dtn\""
+par dtn.host5.dtn neighbor_detection_interval 5s
+attr unit s
+par dtn.host5.dtn neighbor_expiration_time 20s
+attr unit s
+par dtn.host5.dtn check_neighbor_expiration_interval 10s
+attr unit s
+par dtn.host5.dtn buffer_expiration_time 50s
+attr unit s
+par dtn.host5.dtn check_buffer_expiration_interval 5s
+attr unit s
+par dtn.host5.dtn neighbor_exchange_interval 5s
+attr unit s
+par dtn.host5.dtnTraffic typename "\"inet.projects.dtn_network.dtn_module.DtnTraffic\""
+par dtn.host5.dtnTraffic destAddress "\"\""
+par dtn.host5.dtnTraffic sendInterval 2s
+attr unit s
+par dtn.host5.dtnTraffic startTime 0s
+attr unit s
+par dtn.host5.dtnTraffic stopTime 0s
+attr unit s
+par dtn.host5 typename "\"inet.projects.dtn_network.dtn_node.DtnRouter\""
+par dtn.host5 hasStatus false
+par dtn.host5 osgModel "\"\""
+par dtn.host5 osgModelColor "\"\""
+par dtn.host5 canvasImage "\"\""
+par dtn.host5 canvasImageColor "\"\""
+par dtn.host5 recordPcap false
+par dtn.host5 numPcapRecorders 0
+par dtn.host5 numLoInterfaces 1
+par dtn.host5 numWlanInterfaces 0
+par dtn.host5 numEthInterfaces 0
+par dtn.host5 numPppInterfaces 0
+par dtn.host5 numTunInterfaces 0
+par dtn.host5 numVirtInterfaces 0
+par dtn.host5 hasIpv4 true
+par dtn.host5 hasIpv6 false
+par dtn.host5 hasGn false
+par dtn.host5 forwarding false
+par dtn.host5 multicastForwarding false
+par dtn.host5 hasUdp true
+par dtn.host5 hasTcp true
+par dtn.host5 hasSctp false
+par dtn.host5 numApps 0
+par dtn.host6.ethg$i[0].channel typename "\"ned.IdealChannel\""
+par dtn.host6.eth[0].phys$o.channel typename "\"ned.IdealChannel\""
+par dtn.host6.interfaceTable typename "\"inet.networklayer.common.InterfaceTable\""
+par dtn.host6.interfaceTable displayAddresses false
+par dtn.host6.li typename "\"inet.common.MessageDispatcher\""
+par dtn.host6.li displayStringTextFormat "\"processed %p pk (%l)\""
+par dtn.host6.lo[0].upperLayerIn.channel typename "\"ned.IdealChannel\""
+par dtn.host6.lo[0].lo.upperLayerOut.channel typename "\"ned.IdealChannel\""
+par dtn.host6.lo[0].lo typename "\"inet.linklayer.loopback.Loopback\""
+par dtn.host6.lo[0].lo interfaceTableModule "\"dtn.host6.interfaceTable\""
+par dtn.host6.lo[0].lo mtu 4470B
+attr unit B
+par dtn.host6.lo[0] typename "\"inet.linklayer.loopback.LoopbackInterface\""
+par dtn.host6.lo[0] displayStringTextFormat "\"%a (%i)\\n%m\""
+par dtn.host6.lo[0] recordPcap false
+par dtn.host6.lo[0] numPcapRecorders 0
+par dtn.host6.lo[0] interfaceTableModule "\"dtn.host6.interfaceTable\""
+par dtn.host6.eth[0].mac.phys$o.channel typename "\"ned.IdealChannel\""
+par dtn.host6.eth[0].phys$i.channel typename "\"ned.IdealChannel\""
+par dtn.host6.eth[0].encap.upperLayerOut.channel typename "\"ned.IdealChannel\""
+par dtn.host6.eth[0].upperLayerIn.channel typename "\"ned.IdealChannel\""
+par dtn.host6.eth[0].encap typename "\"inet.linklayer.ethernet.basic.EthernetEncapsulation\""
+par dtn.host6.eth[0].encap interfaceTableModule "\"dtn.host6.interfaceTable\""
+par dtn.host6.eth[0].encap useSNAP false
+par dtn.host6.eth[0].encap fcsMode "\"declared\""
+attr enum declared,computed
+par dtn.host6.eth[0].encap registerProtocol false
+par dtn.host6.eth[0].encap stopOperationExtraTime -1s
+attr unit s
+par dtn.host6.eth[0].encap stopOperationTimeout 2s
+attr unit s
+par dtn.host6.eth[0].mac.queue typename "\"inet.linklayer.ethernet.common.EthernetQueue\""
+par dtn.host6.eth[0].mac.queue displayStringTextFormat "\"contains %p pk (%l) pushed %u\\npulled %o removed %r dropped %d\""
+par dtn.host6.eth[0].mac.queue packetCapacity 10000
+par dtn.host6.eth[0].mac.queue dataCapacity -1b
+attr unit b
+par dtn.host6.eth[0].mac.queue dropperClass "\"inet::queueing::PacketAtCollectionEndDropper\""
+par dtn.host6.eth[0].mac.queue comparatorClass "\"inet::EthernetFrameTypeComparator\""
+par dtn.host6.eth[0].mac.queue bufferModule "\"\""
+par dtn.host6.eth[0].mac typename "\"inet.linklayer.ethernet.basic.EthernetMac\""
+par dtn.host6.eth[0].mac interfaceTableModule "\"dtn.host6.interfaceTable\""
+par dtn.host6.eth[0].mac displayStringTextFormat "\"rate: %b\\nsent: %s, rcvd: %r\\nqueue: %q, drop: %d\""
+par dtn.host6.eth[0].mac sendRawBytes false
+par dtn.host6.eth[0].mac promiscuous false
+par dtn.host6.eth[0].mac duplexMode true
+par dtn.host6.eth[0].mac mtu 1500B
+attr unit B
+par dtn.host6.eth[0].mac stopOperationExtraTime -1s
+attr unit s
+par dtn.host6.eth[0].mac stopOperationTimeout 2s
+attr unit s
+par dtn.host6.eth[0] typename "\"inet.linklayer.ethernet.EthernetInterface\""
+par dtn.host6.eth[0] displayStringTextFormat "\"%a (%i)\\n%m\""
+par dtn.host6.eth[0] recordPcap false
+par dtn.host6.eth[0] numPcapRecorders 0
+par dtn.host6.eth[0] interfaceTableModule "\"dtn.host6.interfaceTable\""
+par dtn.host6.eth[0] address "\"0A-AA-00-00-00-0A\""
+attr mutable ""
+par dtn.host6.eth[0] duplexMode true
+par dtn.host6.eth[0] csmacdSupport false
+par dtn.host6.eth[0] bitrate 0bps
+attr unit bps
+par dtn.host6.eth[0] fcsMode "\"declared\""
+attr enum declared,computed
+par dtn.host6.ipv4.transportIn.channel typename "\"ned.IdealChannel\""
+par dtn.host6.ipv4.up.out[0].channel typename "\"ned.IdealChannel\""
+par dtn.host6.ipv4.lp.out[2].channel typename "\"ned.IdealChannel\""
+par dtn.host6.ipv4.ifIn.channel typename "\"ned.IdealChannel\""
+par dtn.host6.ipv4.configurator typename "\"inet.networklayer.configurator.ipv4.Ipv4NodeConfigurator\""
+par dtn.host6.ipv4.configurator interfaceTableModule "\"dtn.host6.interfaceTable\""
+par dtn.host6.ipv4.configurator routingTableModule "\"dtn.host6.ipv4.routingTable\""
+par dtn.host6.ipv4.configurator networkConfiguratorModule "\"configurator\""
+par dtn.host6.ipv4.configurator configureRoutingTable true
+par dtn.host6.ipv4.routingTable typename "\"inet.networklayer.ipv4.Ipv4RoutingTable\""
+par dtn.host6.ipv4.routingTable interfaceTableModule "\"dtn.host6.interfaceTable\""
+par dtn.host6.ipv4.routingTable routerId "\"auto\""
+par dtn.host6.ipv4.routingTable netmaskRoutes "\"*\""
+par dtn.host6.ipv4.routingTable forwarding false
+par dtn.host6.ipv4.routingTable multicastForwarding false
+par dtn.host6.ipv4.routingTable useAdminDist false
+par dtn.host6.ipv4.routingTable routingFile "\"\""
+par dtn.host6.ipv4.natTable typename "\"inet.networklayer.ipv4.Ipv4NatTable\""
+par dtn.host6.ipv4.natTable networkProtocolModule "\"^.ip\""
+par dtn.host6.ipv4.natTable config "<config/> at content:1"
+par dtn.host6.ipv4.up typename "\"inet.common.MessageDispatcher\""
+par dtn.host6.ipv4.up displayStringTextFormat "\"processed %p pk (%l)\""
+par dtn.host6.ipv4.igmp typename "\"inet.networklayer.ipv4.Igmpv2\""
+par dtn.host6.ipv4.igmp interfaceTableModule "\"dtn.host6.interfaceTable\""
+par dtn.host6.ipv4.igmp routingTableModule "\"dtn.host6.ipv4.routingTable\""
+par dtn.host6.ipv4.igmp crcMode "\"declared\""
+attr enum declared,computed
+par dtn.host6.ipv4.igmp enabled true
+par dtn.host6.ipv4.igmp robustnessVariable 2
+par dtn.host6.ipv4.igmp queryInterval 125s
+attr unit s
+par dtn.host6.ipv4.igmp queryResponseInterval 10s
+attr unit s
+par dtn.host6.ipv4.igmp groupMembershipInterval 260s
+attr unit s
+par dtn.host6.ipv4.igmp otherQuerierPresentInterval 255s
+attr unit s
+par dtn.host6.ipv4.igmp startupQueryInterval 31.25s
+attr unit s
+par dtn.host6.ipv4.igmp startupQueryCount 2
+par dtn.host6.ipv4.igmp lastMemberQueryInterval 1s
+attr unit s
+par dtn.host6.ipv4.igmp lastMemberQueryCount 2
+par dtn.host6.ipv4.igmp unsolicitedReportInterval 10s
+attr unit s
+par dtn.host6.ipv4.icmp typename "\"inet.networklayer.ipv4.Icmp\""
+par dtn.host6.ipv4.icmp interfaceTableModule "\"dtn.host6.interfaceTable\""
+par dtn.host6.ipv4.icmp routingTableModule "\"dtn.host6.ipv4.routingTable\""
+par dtn.host6.ipv4.icmp crcMode "\"declared\""
+attr enum declared,computed
+attr mutable ""
+par dtn.host6.ipv4.icmp quoteLength 8B
+attr mutable ""
+attr unit B
+par dtn.host6.ipv4.mp typename "\"inet.common.MessageDispatcher\""
+par dtn.host6.ipv4.mp displayStringTextFormat "\"processed %p pk (%l)\""
+par dtn.host6.ipv4.ip typename "\"inet.networklayer.ipv4.Ipv4\""
+par dtn.host6.ipv4.ip interfaceTableModule "\"dtn.host6.interfaceTable\""
+par dtn.host6.ipv4.ip routingTableModule "\"dtn.host6.ipv4.routingTable\""
+par dtn.host6.ipv4.ip arpModule "\"dtn.host6.ipv4.arp\""
+par dtn.host6.ipv4.ip icmpModule "\"dtn.host6.ipv4.icmp\""
+par dtn.host6.ipv4.ip crcMode "\"declared\""
+attr enum declared,computed
+par dtn.host6.ipv4.ip timeToLive 32
+par dtn.host6.ipv4.ip multicastTimeToLive 32
+par dtn.host6.ipv4.ip fragmentTimeout 60s
+attr unit s
+par dtn.host6.ipv4.ip limitedBroadcast false
+par dtn.host6.ipv4.ip directBroadcastInterfaces "\"\""
+par dtn.host6.ipv4.arp typename "\"inet.networklayer.arp.ipv4.Arp\""
+par dtn.host6.ipv4.arp interfaceTableModule "\"dtn.host6.interfaceTable\""
+par dtn.host6.ipv4.arp routingTableModule "\"dtn.host6.ipv4.routingTable\""
+par dtn.host6.ipv4.arp retryTimeout 1s
+attr unit s
+par dtn.host6.ipv4.arp retryCount 3
+par dtn.host6.ipv4.arp cacheTimeout 120s
+attr unit s
+par dtn.host6.ipv4.arp proxyArpInterfaces "\"\""
+par dtn.host6.ipv4.lp typename "\"inet.common.MessageDispatcher\""
+par dtn.host6.ipv4.lp displayStringTextFormat "\"processed %p pk (%l)\""
+par dtn.host6.ipv4 typename "\"inet.networklayer.ipv4.Ipv4NetworkLayer\""
+par dtn.host6.ipv4 forwarding false
+par dtn.host6.ipv4 multicastForwarding false
+par dtn.host6.ipv4 interfaceTableModule "\"dtn.host6.interfaceTable\""
+par dtn.host6.ipv4 displayStringTextFormat "\"%i\""
+par dtn.host6.nl typename "\"inet.common.MessageDispatcher\""
+par dtn.host6.nl displayStringTextFormat "\"processed %p pk (%l)\""
+par dtn.host6.udp typename "\"inet.transportlayer.udp.Udp\""
+par dtn.host6.udp interfaceTableModule "\"dtn.host6.interfaceTable\""
+par dtn.host6.udp icmpModule "\"^.ipv4.icmp\""
+par dtn.host6.udp icmpv6Module "\"^.ipv6.icmpv6\""
+par dtn.host6.udp crcMode "\"declared\""
+attr enum disabled,declared,computed
+par dtn.host6.tcp typename "\"inet.transportlayer.tcp.Tcp\""
+par dtn.host6.tcp crcMode "\"declared\""
+attr enum declared,computed
+par dtn.host6.tcp advertisedWindow 7504
+par dtn.host6.tcp delayedAcksEnabled false
+par dtn.host6.tcp nagleEnabled true
+par dtn.host6.tcp limitedTransmitEnabled false
+par dtn.host6.tcp increasedIWEnabled false
+par dtn.host6.tcp sackSupport false
+par dtn.host6.tcp windowScalingSupport false
+par dtn.host6.tcp windowScalingFactor -1
+par dtn.host6.tcp timestampSupport false
+par dtn.host6.tcp mss 536
+par dtn.host6.tcp msl 120s
+attr unit s
+par dtn.host6.tcp tcpAlgorithmClass "\"TcpReno\""
+attr enum TcpVegas,TcpWestwood,TcpNewReno,TcpReno,TcpTahoe,TcpNoCongestionControl
+par dtn.host6.tcp useDataNotification false
+par dtn.host6.tcp dupthresh 3
+par dtn.host6.tcp initialSsthresh 4294967295
+par dtn.host6.tcp stopOperationExtraTime 0s
+attr unit s
+par dtn.host6.tcp stopOperationTimeout 2s
+attr unit s
+par dtn.host6.tcp ecnWillingness false
+par dtn.host6.tcp dctcpGamma 0.0625
+par dtn.host6.tn typename "\"inet.common.MessageDispatcher\""
+par dtn.host6.tn displayStringTextFormat "\"processed %p pk (%l)\""
+par dtn.host6.at typename "\"inet.common.MessageDispatcher\""
+par dtn.host6.at displayStringTextFormat "\"processed %p pk (%l)\""
+par dtn.host6.dtn typename "\"inet.projects.dtn_network.dtn_module.dtn\""
+par dtn.host6.dtn neighbor_detection_interval 5s
+attr unit s
+par dtn.host6.dtn neighbor_expiration_time 20s
+attr unit s
+par dtn.host6.dtn check_neighbor_expiration_interval 10s
+attr unit s
+par dtn.host6.dtn buffer_expiration_time 50s
+attr unit s
+par dtn.host6.dtn check_buffer_expiration_interval 5s
+attr unit s
+par dtn.host6.dtn neighbor_exchange_interval 5s
+attr unit s
+par dtn.host6.dtnTraffic typename "\"inet.projects.dtn_network.dtn_module.DtnTraffic\""
+par dtn.host6.dtnTraffic destAddress "\"\""
+par dtn.host6.dtnTraffic sendInterval 2s
+attr unit s
+par dtn.host6.dtnTraffic startTime 0s
+attr unit s
+par dtn.host6.dtnTraffic stopTime 0s
+attr unit s
+par dtn.host6 typename "\"inet.projects.dtn_network.dtn_node.DtnRouter\""
+par dtn.host6 hasStatus false
+par dtn.host6 osgModel "\"\""
+par dtn.host6 osgModelColor "\"\""
+par dtn.host6 canvasImage "\"\""
+par dtn.host6 canvasImageColor "\"\""
+par dtn.host6 recordPcap false
+par dtn.host6 numPcapRecorders 0
+par dtn.host6 numLoInterfaces 1
+par dtn.host6 numWlanInterfaces 0
+par dtn.host6 numEthInterfaces 0
+par dtn.host6 numPppInterfaces 0
+par dtn.host6 numTunInterfaces 0
+par dtn.host6 numVirtInterfaces 0
+par dtn.host6 hasIpv4 true
+par dtn.host6 hasIpv6 false
+par dtn.host6 hasGn false
+par dtn.host6 forwarding false
+par dtn.host6 multicastForwarding false
+par dtn.host6 hasUdp true
+par dtn.host6 hasTcp true
+par dtn.host6 hasSctp false
+par dtn.host6 numApps 0
+par dtn typename "\"inet.projects.dtn_network.dtn\""
+

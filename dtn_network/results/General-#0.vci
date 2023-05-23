@@ -1,0 +1,254 @@
+file 28403 1684305987                                           
+version 3
+run General-0-20230517-14:43:53-67013
+attr configname General
+attr datetime 20230517-14:43:53
+attr datetimef 20230517-144353
+attr experiment General
+attr inifile starter.ini
+attr iterationvars ""
+attr iterationvarsd ""
+attr iterationvarsf ""
+attr measurement ""
+attr network inet.projects.dtn_network.dtn
+attr processid 67013
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+config image-path ../../../../images
+config network inet.projects.dtn_network.dtn
+config dtn.host*.numApps 1
+config dtn.host1.app[0].typename UdpBasicApp
+config dtn.host1.app[0].localPort 1000
+config dtn.host1.app[0].destPort 1000
+config dtn.host1.app[0].destAddresses "\"host2\""
+config dtn.host1.app[0].startTime 1s
+config dtn.host1.app[0].stopTime 10s
+config dtn.host1.app[0].sendInterval 0.5s
+config dtn.host1.app[0].messageLength 1000B
+config dtn.host2.app[0].typename UdpSink
+config dtn.host2.app[0].localPort 1000
+config dtn.host2.app[0].startTime 0s
+config dtn.host2.app[0].stopTime 50s
+config **.configurator.config "xmldoc(\"ipv4Config.xml\")"
+
+vector 0 dtn.host1.eth[0].mac.queue queueLength:vector ETV
+attr autoWarmupFilter false
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source "warmup(count(packetPushed) - count(packetPulled) - count(packetRemoved) - count(packetDropped))"
+attr title "queue length"
+attr type int
+vector 1 dtn.host1.udp passedUpPk:vector(count) ETV
+attr interpolationmode none
+attr recordingmode vector(count)
+attr source packetSentToUpper
+attr title "packets passed up, count"
+vector 2 dtn.host1.udp droppedPkWrongPort:vector(count) ETV
+attr interpolationmode none
+attr recordingmode vector(count)
+attr source packetDropReasonIsNoPortFound(packetDropped)
+attr title "packets dropped (wrong port), count"
+vector 3 dtn.host1.udp droppedPkBadChecksum:vector(count) ETV
+attr interpolationmode none
+attr recordingmode vector(count)
+attr source packetDropReasonIsIncorrectlyReceived(packetDropped)
+attr title "packets dropped (checksum error), count"
+vector 4 dtn.host2.eth[0].mac.queue queueLength:vector ETV
+attr autoWarmupFilter false
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source "warmup(count(packetPushed) - count(packetPulled) - count(packetRemoved) - count(packetDropped))"
+attr title "queue length"
+attr type int
+vector 5 dtn.host2.udp passedUpPk:vector(count) ETV
+attr interpolationmode none
+attr recordingmode vector(count)
+attr source packetSentToUpper
+attr title "packets passed up, count"
+vector 6 dtn.host2.udp droppedPkWrongPort:vector(count) ETV
+attr interpolationmode none
+attr recordingmode vector(count)
+attr source packetDropReasonIsNoPortFound(packetDropped)
+attr title "packets dropped (wrong port), count"
+vector 7 dtn.host2.udp droppedPkBadChecksum:vector(count) ETV
+attr interpolationmode none
+attr recordingmode vector(count)
+attr source packetDropReasonIsIncorrectlyReceived(packetDropped)
+attr title "packets dropped (checksum error), count"
+vector 8 dtn.host1.app[0] packetSent:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr source packetSent
+attr title "packets sent, packetBytes"
+vector 9 dtn.host1.udp packetSent:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr source packetSent
+attr title "packets sent, packetBytes"
+vector 10 dtn.host1.ipv4.arp arpRequestSent:vector(packetBytes) ETV
+attr recordingmode vector(packetBytes)
+attr source arpRequestSent
+attr title "ARP request sent, packetBytes"
+vector 11 dtn.host1.eth[0].encap encapPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr source encapPk
+attr title "packets encapsulated, packetBytes"
+vector 12 dtn.host1.eth[0].mac packetReceivedFromUpper:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr source packetReceivedFromUpper
+attr title "packet bytes from higher layer, packetBytes"
+vector 13 dtn.host1.eth[0].mac.queue packetPushed:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr title "packet pushed, packetBytes"
+vector 14 dtn.host1.eth[0].mac.queue packetPulled:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr title "packet pulled, packetBytes"
+vector 15 dtn.host1.eth[0].mac.queue queueingTime:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr source queueingTime(packetPulled)
+attr title "queueing times"
+attr unit s
+vector 16 dtn.host1.eth[0].mac txPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr source packetSentToLower
+attr title "packets transmitted, packetBytes"
+vector 17 dtn.host2.eth[0].mac rxPkOk:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr source rxPkOk
+attr title "packets received OK, packetBytes"
+vector 18 dtn.host2.eth[0].mac passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr source packetSentToUpper
+attr title "packets passed to higher layer, packetBytes"
+vector 19 dtn.host2.eth[0].encap decapPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr source decapPk
+attr title "packets decapsulated, packetBytes"
+vector 20 dtn.host2.ipv4.arp arpReplySent:vector(packetBytes) ETV
+attr recordingmode vector(packetBytes)
+attr source arpReplySent
+attr title "ARP replies sent, packetBytes"
+vector 21 dtn.host2.eth[0].encap encapPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr source encapPk
+attr title "packets encapsulated, packetBytes"
+vector 22 dtn.host2.eth[0].mac packetReceivedFromUpper:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr source packetReceivedFromUpper
+attr title "packet bytes from higher layer, packetBytes"
+vector 23 dtn.host2.eth[0].mac.queue packetPushed:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr title "packet pushed, packetBytes"
+vector 24 dtn.host2.eth[0].mac.queue packetPulled:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr title "packet pulled, packetBytes"
+vector 25 dtn.host2.eth[0].mac.queue queueingTime:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr source queueingTime(packetPulled)
+attr title "queueing times"
+attr unit s
+vector 26 dtn.host2.eth[0].mac txPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr source packetSentToLower
+attr title "packets transmitted, packetBytes"
+vector 27 dtn.host1.eth[0].mac rxPkOk:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr source rxPkOk
+attr title "packets received OK, packetBytes"
+vector 28 dtn.host1.eth[0].mac passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr source packetSentToUpper
+attr title "packets passed to higher layer, packetBytes"
+vector 29 dtn.host1.eth[0].encap decapPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr source decapPk
+attr title "packets decapsulated, packetBytes"
+vector 30 dtn.host2.udp packetReceived:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr source packetReceived
+attr title "packets received, packetBytes"
+vector 31 dtn.host2.app[0] packetReceived:vector(packetBytes) ETV
+attr interpolationmode none
+attr recordingmode vector(packetBytes)
+attr source packetReceived
+attr title "packets received, packetBytes"
+vector 32 dtn.host2.app[0] throughput:vector ETV
+attr recordingmode vector
+attr source throughput(packetReceived)
+attr title throughput
+attr unit bps
+vector 33 dtn.host2.app[0] endToEndDelay:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr source dataAge(packetReceived)
+attr title "end-to-end delay"
+attr unit s
+vector 34 dtn.host2.app[0] rcvdPkSeqNo:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr source appPkSeqNo(packetReceived)
+attr title "received packet sequence number"
+vector 35 dtn.host1.app[0] throughput:vector ETV
+attr recordingmode vector
+attr source throughput(packetReceived)
+attr title throughput
+attr unit bps
+0	8400 448 0 227 0 9.5 42 0 1 19 19
+1	8848 8 0 0 0 0 1 0 0 0 0
+2	8856 8 0 0 0 0 1 0 0 0 0
+3	8864 8 0 0 0 0 1 0 0 0 0
+4	8872 68 0 16 0 1.00005576 6 0 1 1 1
+5	8940 353 0 233 0 9.50013432 19 0 18 171 2109
+6	9293 8 0 0 0 0 1 0 0 0 0
+7	9301 8 0 0 0 0 1 0 0 0 0
+8	9309 244 4 223 1 9.5 18 1000 1000 18000 18000000
+9	9553 244 6 224 1 9.5 18 1008 1008 18144 18289152
+10	9797 10 7 7 1 1 1 28 28 28 784
+11	9807 282 8 226 1 9.5 19 28 1028 18532 19022896
+12	10089 282 9 227 1 9.5 19 46 1046 18874 19696204
+13	10371 282 9 227 1 9.5 19 46 1046 18874 19696204
+14	10653 282 9 227 1 9.5 19 46 1046 18874 19696204
+15	10935 227 9 227 1 9.5 19 0 0 0 0
+16	11162 427 10 228 1.00000576 9.50008432 19 64 1046 18892 19698184
+17	11589 427 12 230 1.00005576 9.50013432 19 64 1046 18892 19698184
+18	12016 427 12 230 1.00005576 9.50013432 19 64 1046 18892 19698184
+19	12443 427 13 231 1.00005576 9.50013432 19 46 1028 18550 19024228
+20	12870 20 14 14 1.00005576 1.00005576 1 28 28 28 784
+21	12890 20 15 15 1.00005576 1.00005576 1 28 28 28 784
+22	12910 20 16 16 1.00005576 1.00005576 1 46 46 46 2116
+23	12930 20 16 16 1.00005576 1.00005576 1 46 46 46 2116
+24	12950 20 16 16 1.00005576 1.00005576 1 46 46 46 2116
+25	12970 19 16 16 1.00005576 1.00005576 1 0 0 0 0
+26	12989 20 17 17 1.00006152 1.00006152 1 64 64 64 4096
+27	13009 20 19 19 1.00011152 1.00011152 1 64 64 64 4096
+28	13029 20 19 19 1.00011152 1.00011152 1 64 64 64 4096
+29	13049 20 20 20 1.00011152 1.00011152 1 46 46 46 2116
+30	13069 408 29 233 1.00024584 9.50013432 18 1008 1008 18144 18289152
+31	13477 408 30 234 1.00024584 9.50013432 18 1000 1000 18000 18000000
+32	13885 6838 30 240 0.1 50 500 0 80000 1440000 115200000000
+33	20723 516 30 234 1.00024584 9.50013432 18 0.00013432 0.00024584 0.00252928 3.671489664e-07
+34	21239 362 30 234 1.00024584 9.50013432 18 0 17 153 1785
+35	21601 6801 240 240 0.1 50 500 0 0 0 0
+
