@@ -22,7 +22,7 @@ namespace inet{
             // add the id to the neighborIds
             neighbor->sendIds.insert(id);
         }
-        neighbor->processEvent(DtnNeighbor::NEIGHBOR_SEND_REQUEST_PACKETS);
+        // neighbor->processEvent(DtnNeighbor::NEIGHBOR_SEND_REQUEST_PACKETS);
         // delete packet
         delete packet;
     }

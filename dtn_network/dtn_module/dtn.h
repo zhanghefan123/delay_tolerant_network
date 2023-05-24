@@ -35,6 +35,7 @@ public:
     double buffer_expiration_time;
     double check_buffer_expiration_interval;
     double neighbor_exchange_interval;
+    double send_packet_interval;
 
 
 public:

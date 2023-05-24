@@ -18,6 +18,12 @@ namespace inet{
         if(this->neighborExpireTimer != nullptr){
             delete this->neighborExpireTimer;
         }
+        if(this->neighborExchangeTimer != nullptr){
+            delete this->neighborExchangeTimer;
+        }
+        if(this->neighborSendPacketTimer != nullptr){
+            delete this->neighborSendPacketTimer;
+        }
         if(this->previousState != nullptr)
             delete this->previousState;
         if(this->state != nullptr){
@@ -32,7 +38,8 @@ namespace inet{
                              double check_neighbor_expiration_interval,
                              double buffer_expiration_time,
                              double check_buffer_expiration_interval,
-                             double neighbor_exchange_interval){
+                             double neighbor_exchange_interval,
+                             double send_packet_interval){
         // timer set up
         this->neighborDetectTimer = new cMessage(NEIGHBOR_DETECT_MSG_NAME.c_str(),NEIGHBOR_DETECT_MSG_KIND);
         this->neighborDetectTimer->setContextPointer(this); // setting context pointer to this
@@ -40,6 +47,8 @@ namespace inet{
         this->neighborExpireTimer->setContextPointer(this); // setting context pointer to this
         this->neighborExchangeTimer = new cMessage(NEIGHBOR_EXCHANGE_MSG_NAME.c_str(), NEIGHBOR_EXCHANGE_MSG_KIND);
         this->neighborExchangeTimer->setContextPointer(this); // setting context pointer
+        this->neighborSendPacketTimer = new cMessage(NEIGHBOR_SEND_PACKET_TIMER.c_str(), NEIGHBOR_SEND_PACKET_MSG_KIND);
+        this->neighborSendPacketTimer->setContextPointer(this); // setting context pointer
 
 
         // parameters set up
@@ -52,6 +61,7 @@ namespace inet{
         this->buffer_expiration_time = buffer_expiration_time;
         this->check_buffer_expiration_interval = check_buffer_expiration_interval;
         this->neighbor_exchange_interval = neighbor_exchange_interval;
+        this->send_packet_interval = send_packet_interval;
 
         // states set up
         this->lastSeenTime = simTime();
@@ -80,6 +90,21 @@ namespace inet{
         EV_INFO << "Changing neighborhood state of " << this->getNeighborID()
                 << " from '" << getStateString(currentState->getState())
                 << "' to '" << getStateString(newState->getState()) << "'" << std::endl;
+
+        // zhf add code
+        if(newState->getState() == DtnNeighbor::DtnNeighborStateType::NEIGHBOR_TWO_WAY_STATE){
+            // start the timer
+            dtn* dtn_module_tmp = dynamic_cast<dtn*>(this->dtn_module);
+            dtn_module_tmp->messageHandler->startTimer(this->neighborSendPacketTimer, this->send_packet_interval);
+        }
+        if((newState->getState() == DtnNeighbor::DtnNeighborStateType::NEIGHBOR_DOWN_STATE) &&
+                (currentState->getState() == DtnNeighbor::DtnNeighborStateType::NEIGHBOR_TWO_WAY_STATE)){
+            // cancel the possible send packet timer
+            if(this->neighborSendPacketTimer->isScheduled())
+            {
+                this->dtn_module->cancelEvent(this->neighborSendPacketTimer);
+            }
+        }
 
         if (previousState != nullptr) {
             delete previousState;
@@ -181,9 +206,18 @@ namespace inet{
 
     void DtnNeighbor::sendPacketsById(const inet::Ipv4Address &multicastAddress, short ttl) {
         dtn* dtn_module_tmp = check_and_cast<dtn*>(this->dtn_module);
+        std::string sendPacketId = "";
         // copy the packet in the buffer and send out the packet
-        for(const auto& sendPacketId : this->sendIds){
+        for(const auto& sendPacketIdTmp : this->sendIds){
+            sendPacketId = sendPacketIdTmp;
+            break;
+        }
+        // judge if there is no packet in the buffer
+        if(strcmp(sendPacketId.c_str(), "") == 0){
+            // not sending packet
+        } else {
             std::cout << "send packet by id" << std::endl;
+            std::cout << "packet id:" << sendPacketId << std::endl;
             // find in the buffer
             Packet* pk = dtn_module_tmp->packets_buffer[sendPacketId].first->dup();
             // send out the packet
@@ -194,9 +228,9 @@ namespace inet{
             pk->addTagIfAbsent<HopLimitReq>()->setHopLimit(ttl);
             // call send function
             this->sendPacket(pk);
+            // remove the sendIds
+            this->sendIds.erase(sendPacketId);
         }
-        // clear the sendIds
-        this->sendIds.clear();
     }
 
 }

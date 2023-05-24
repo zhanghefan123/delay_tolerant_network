@@ -1,8 +1,8 @@
 version 3
-run General-0-20230523-15:51:17-36237
+run General-0-20230524-19:27:59-72956
 attr configname General
-attr datetime 20230523-15:51:17
-attr datetimef 20230523-155117
+attr datetime 20230524-19:27:59
+attr datetimef 20230524-192759
 attr experiment General
 attr inifile starter.ini
 attr iterationvars ""
@@ -10,7 +10,7 @@ attr iterationvarsd ""
 attr iterationvarsf ""
 attr measurement ""
 attr network inet.projects.dtn_network.dtn
-attr processid 36237
+attr processid 72956
 attr repetition 0
 attr replication #0
 attr resultdir results
@@ -24,7 +24,7 @@ config **.scalar-recording false
 config **.vector-recording false
 config network inet.projects.dtn_network.dtn
 config dtn.host1.dtnTraffic.destAddress "\"host4\""
-config dtn.host1.dtnTraffic.stopTime 10s
+config dtn.host1.dtnTraffic.stopTime 20s
 config **.configurator.config "xmldoc(\"ipv4Config.xml\")"
 config allow-object-stealing-on-deletion true
 
@@ -493,13 +493,15 @@ par dtn.host1.dtn check_buffer_expiration_interval 5s
 attr unit s
 par dtn.host1.dtn neighbor_exchange_interval 5s
 attr unit s
+par dtn.host1.dtn send_packet_interval 0.5s
+attr unit s
 par dtn.host1.dtnTraffic typename "\"inet.projects.dtn_network.dtn_module.DtnTraffic\""
 par dtn.host1.dtnTraffic destAddress "\"host4\""
-par dtn.host1.dtnTraffic sendInterval 2s
+par dtn.host1.dtnTraffic sendInterval 0.5s
 attr unit s
 par dtn.host1.dtnTraffic startTime 0s
 attr unit s
-par dtn.host1.dtnTraffic stopTime 10s
+par dtn.host1.dtnTraffic stopTime 20s
 attr unit s
 par dtn.host1 typename "\"inet.projects.dtn_network.dtn_node.DtnRouter\""
 par dtn.host1 hasStatus false
@@ -773,9 +775,11 @@ par dtn.host2.dtn check_buffer_expiration_interval 5s
 attr unit s
 par dtn.host2.dtn neighbor_exchange_interval 5s
 attr unit s
+par dtn.host2.dtn send_packet_interval 0.5s
+attr unit s
 par dtn.host2.dtnTraffic typename "\"inet.projects.dtn_network.dtn_module.DtnTraffic\""
 par dtn.host2.dtnTraffic destAddress "\"\""
-par dtn.host2.dtnTraffic sendInterval 2s
+par dtn.host2.dtnTraffic sendInterval 0.5s
 attr unit s
 par dtn.host2.dtnTraffic startTime 0s
 attr unit s
@@ -1053,9 +1057,11 @@ par dtn.host3.dtn check_buffer_expiration_interval 5s
 attr unit s
 par dtn.host3.dtn neighbor_exchange_interval 5s
 attr unit s
+par dtn.host3.dtn send_packet_interval 0.5s
+attr unit s
 par dtn.host3.dtnTraffic typename "\"inet.projects.dtn_network.dtn_module.DtnTraffic\""
 par dtn.host3.dtnTraffic destAddress "\"\""
-par dtn.host3.dtnTraffic sendInterval 2s
+par dtn.host3.dtnTraffic sendInterval 0.5s
 attr unit s
 par dtn.host3.dtnTraffic startTime 0s
 attr unit s
@@ -1284,9 +1290,11 @@ par dtn.host4.dtn check_buffer_expiration_interval 5s
 attr unit s
 par dtn.host4.dtn neighbor_exchange_interval 5s
 attr unit s
+par dtn.host4.dtn send_packet_interval 0.5s
+attr unit s
 par dtn.host4.dtnTraffic typename "\"inet.projects.dtn_network.dtn_module.DtnTraffic\""
 par dtn.host4.dtnTraffic destAddress "\"\""
-par dtn.host4.dtnTraffic sendInterval 2s
+par dtn.host4.dtnTraffic sendInterval 0.5s
 attr unit s
 par dtn.host4.dtnTraffic startTime 0s
 attr unit s
@@ -1515,9 +1523,11 @@ par dtn.host5.dtn check_buffer_expiration_interval 5s
 attr unit s
 par dtn.host5.dtn neighbor_exchange_interval 5s
 attr unit s
+par dtn.host5.dtn send_packet_interval 0.5s
+attr unit s
 par dtn.host5.dtnTraffic typename "\"inet.projects.dtn_network.dtn_module.DtnTraffic\""
 par dtn.host5.dtnTraffic destAddress "\"\""
-par dtn.host5.dtnTraffic sendInterval 2s
+par dtn.host5.dtnTraffic sendInterval 0.5s
 attr unit s
 par dtn.host5.dtnTraffic startTime 0s
 attr unit s
@@ -1746,9 +1756,11 @@ par dtn.host6.dtn check_buffer_expiration_interval 5s
 attr unit s
 par dtn.host6.dtn neighbor_exchange_interval 5s
 attr unit s
+par dtn.host6.dtn send_packet_interval 0.5s
+attr unit s
 par dtn.host6.dtnTraffic typename "\"inet.projects.dtn_network.dtn_module.DtnTraffic\""
 par dtn.host6.dtnTraffic destAddress "\"\""
-par dtn.host6.dtnTraffic sendInterval 2s
+par dtn.host6.dtnTraffic sendInterval 0.5s
 attr unit s
 par dtn.host6.dtnTraffic startTime 0s
 attr unit s

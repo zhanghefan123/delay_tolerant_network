@@ -16,16 +16,21 @@ namespace inet{
         auto epidemicHeader = packet->peekAtFront<EpidemicHeader>();
         // get the packet id
         std::string packetId = epidemicHeader->getUuid();
-        // resolve the request
-        dtnNeighbor->requestIds.erase(packetId);
-        // store the packet in on buffer
-        dtn_module->packets_buffer[packetId] = std::make_pair(packet, simTime());
-        // store the packet id in dtn -- used for later swap
-        dtn_module->packetIds.insert(packetId);
-        // get the destination address of the packet
-        Ipv4Address destAddr = epidemicHeader->getDestAddr();
-        if(ift->isLocalAddress(destAddr)){
-            std::cout << "reach final destination" << std::endl;
+        // judge the key
+        if(dtn_module->packets_buffer.count(packetId) > 0)
+        {
+            delete packet;
+        } else {
+            // store the packet in on buffer
+            dtn_module->packets_buffer[packetId] = std::make_pair(packet, simTime());
+            dtn_module->packetIds.insert(packetId);// store the packet id in dtn -- used for later swap
+            // get the destination address of the packet
+            Ipv4Address destAddr = epidemicHeader->getDestAddr();
+            if(ift->isLocalAddress(destAddr)){
+                std::cout << "reach final destination" << std::endl;
+            }
+            // resolve the request
+            dtnNeighbor->requestIds.erase(packetId);
         }
         std::cout << "received packet id: " << packetId << std::endl;
     }

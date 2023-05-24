@@ -74,6 +74,9 @@ namespace inet{
                 dtn* dtn_module = dynamic_cast<dtn*>(neighbor->dtn_module);
                 // send neighbor request packets
                 neighbor->sendPacketsById(Ipv4Address::DTN_NEIGHBOR_DETECTION_MCAST, 1);
+                // and we need to restart the timer
+                dtn_module->messageHandler->startTimer(neighbor->neighborSendPacketTimer, neighbor->send_packet_interval);
+                break;
             }
         }
     }

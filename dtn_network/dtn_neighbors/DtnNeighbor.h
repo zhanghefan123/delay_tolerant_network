@@ -41,6 +41,7 @@ namespace inet{
                 NEIGHBOR_DETECT_MSG_KIND = 0,
                 CHECK_NEIGH_EXPIRE_MSG_KIND = 1,
                 NEIGHBOR_EXCHANGE_MSG_KIND = 2,
+                NEIGHBOR_SEND_PACKET_MSG_KIND = 3,
             };
             virtual ~DtnNeighbor(); // destructor
             DtnNeighbor(const std::string& id,
@@ -51,7 +52,8 @@ namespace inet{
                                  double check_neighbor_expiration_interval,
                                  double buffer_expiration_time,
                                  double check_buffer_expiration_interval,
-                                 double neighbor_exchange_interval); // constructor
+                                 double neighbor_exchange_interval,
+                                 double send_packet_interval); // constructor
             void processEvent(DtnNeighborEventType event); // process event
             void neighborChangeState(DtnNeighborState* newState, DtnNeighborState* currentState); // change state
             void setNeighborID(const std::string& id) { neighborID = id; } // set neighbor id
@@ -65,6 +67,8 @@ namespace inet{
             cMessage* neighborExpireTimer = nullptr; // this var will be deleted
             // neighbor exchange timer
             cMessage* neighborExchangeTimer = nullptr; // this var will be deleted
+            // send packet timer
+            cMessage* neighborSendPacketTimer = nullptr; // this var will be delete
         public:
             // time settings
             // neighbor detection time
@@ -74,6 +78,7 @@ namespace inet{
             double buffer_expiration_time;
             double check_buffer_expiration_interval;
             double neighbor_exchange_interval;
+            double send_packet_interval;
 
             // packet sender
         public:

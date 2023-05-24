@@ -70,6 +70,17 @@ namespace inet{
                 }
                 break;
             }
+            case DtnNeighbor::NEIGHBOR_SEND_PACKET_MSG_KIND:
+            {
+                if(!(neighbor = reinterpret_cast<DtnNeighbor*>(timer->getContextPointer()))){
+                    EV_ERROR << "Error: DtnNeighbor::NEIGHBOR_SEND_PACKET_MSG_KIND: no neighbor found" << std::endl;
+                    delete timer;
+                } else {
+                    // neighbor inside timer to process event
+                    neighbor->processEvent(DtnNeighbor::DtnNeighborEventType::NEIGHBOR_SEND_REQUEST_PACKETS);
+                }
+                break;
+            }
         }
     }
 

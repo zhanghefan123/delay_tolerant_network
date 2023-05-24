@@ -22,6 +22,12 @@ namespace inet {
             if(neighbor.second->neighborExpireTimer->isScheduled()){
                 cancelEvent(neighbor.second->neighborExpireTimer);
             }
+            if(neighbor.second->neighborExchangeTimer->isScheduled()){
+                cancelEvent(neighbor.second->neighborExchangeTimer);
+            }
+            if(neighbor.second->neighborSendPacketTimer->isScheduled()){
+                cancelEvent(neighbor.second->neighborSendPacketTimer);
+            }
             delete neighbor.second;
         }
         // we need to delete the message handler
@@ -56,7 +62,8 @@ namespace inet {
                                                   this->check_neighbor_expiration_interval,
                                                   this->buffer_expiration_time,
                                                   this->check_buffer_expiration_interval,
-                                                  this->neighbor_exchange_interval);
+                                                  this->neighbor_exchange_interval,
+                                                  this->send_packet_interval);
                 // add the neighbor to the neighbor map
                 this->neighbor_map[uuid] = neighbor;
             }
@@ -159,6 +166,7 @@ namespace inet {
             this->buffer_expiration_time = par(PAR_BUFFER_EXPIRATION_TIME.c_str()).doubleValue();
             this->check_buffer_expiration_interval = par(PAR_CHECK_BUFFER_EXPIRATION_INTERVAL.c_str()).doubleValue();
             this->neighbor_exchange_interval = par(PAR_NEIGHBOR_EXCHANGE_INTERVAL.c_str()).doubleValue();
+            this->send_packet_interval = par(PAR_SEND_PACKET_INTERVAL.c_str()).doubleValue();
             this->messageHandler = new MessageHandler(this);
         }
         else if(stage == INITSTAGE_ROUTING_PROTOCOLS){
